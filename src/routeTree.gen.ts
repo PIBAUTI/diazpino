@@ -9,38 +9,207 @@
 // Additionally, you should also exclude this file from your linter and/or formatter to prevent it from being checked or modified.
 
 import { Route as rootRouteImport } from './routes/__root'
+import { Route as SitemapDotxmlRouteImport } from './routes/sitemap[.]xml'
+import { Route as ServiciosRouteImport } from './routes/servicios'
+import { Route as NosotrosRouteImport } from './routes/nosotros'
+import { Route as CursosRouteImport } from './routes/cursos'
+import { Route as ContactoRouteImport } from './routes/contacto'
 import { Route as IndexRouteImport } from './routes/index'
+import { Route as RecursosIndexRouteImport } from './routes/recursos.index'
+import { Route as RecursosGuiasRouteImport } from './routes/recursos.guias'
+import { Route as RecursosFaqRouteImport } from './routes/recursos.faq'
+import { Route as RecursosTemasIndexRouteImport } from './routes/recursos.temas.index'
+import { Route as RecursosTemasSlugRouteImport } from './routes/recursos.temas.$slug'
 
+const SitemapDotxmlRoute = SitemapDotxmlRouteImport.update({
+  id: '/sitemap.xml',
+  path: '/sitemap.xml',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const ServiciosRoute = ServiciosRouteImport.update({
+  id: '/servicios',
+  path: '/servicios',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const NosotrosRoute = NosotrosRouteImport.update({
+  id: '/nosotros',
+  path: '/nosotros',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const CursosRoute = CursosRouteImport.update({
+  id: '/cursos',
+  path: '/cursos',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const ContactoRoute = ContactoRouteImport.update({
+  id: '/contacto',
+  path: '/contacto',
+  getParentRoute: () => rootRouteImport,
+} as any)
 const IndexRoute = IndexRouteImport.update({
   id: '/',
   path: '/',
   getParentRoute: () => rootRouteImport,
 } as any)
+const RecursosIndexRoute = RecursosIndexRouteImport.update({
+  id: '/recursos/',
+  path: '/recursos/',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const RecursosGuiasRoute = RecursosGuiasRouteImport.update({
+  id: '/recursos/guias',
+  path: '/recursos/guias',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const RecursosFaqRoute = RecursosFaqRouteImport.update({
+  id: '/recursos/faq',
+  path: '/recursos/faq',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const RecursosTemasIndexRoute = RecursosTemasIndexRouteImport.update({
+  id: '/recursos/temas/',
+  path: '/recursos/temas/',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const RecursosTemasSlugRoute = RecursosTemasSlugRouteImport.update({
+  id: '/recursos/temas/$slug',
+  path: '/recursos/temas/$slug',
+  getParentRoute: () => rootRouteImport,
+} as any)
 
 export interface FileRoutesByFullPath {
   '/': typeof IndexRoute
+  '/contacto': typeof ContactoRoute
+  '/cursos': typeof CursosRoute
+  '/nosotros': typeof NosotrosRoute
+  '/servicios': typeof ServiciosRoute
+  '/sitemap.xml': typeof SitemapDotxmlRoute
+  '/recursos/faq': typeof RecursosFaqRoute
+  '/recursos/guias': typeof RecursosGuiasRoute
+  '/recursos/': typeof RecursosIndexRoute
+  '/recursos/temas/$slug': typeof RecursosTemasSlugRoute
+  '/recursos/temas/': typeof RecursosTemasIndexRoute
 }
 export interface FileRoutesByTo {
   '/': typeof IndexRoute
+  '/contacto': typeof ContactoRoute
+  '/cursos': typeof CursosRoute
+  '/nosotros': typeof NosotrosRoute
+  '/servicios': typeof ServiciosRoute
+  '/sitemap.xml': typeof SitemapDotxmlRoute
+  '/recursos/faq': typeof RecursosFaqRoute
+  '/recursos/guias': typeof RecursosGuiasRoute
+  '/recursos': typeof RecursosIndexRoute
+  '/recursos/temas/$slug': typeof RecursosTemasSlugRoute
+  '/recursos/temas': typeof RecursosTemasIndexRoute
 }
 export interface FileRoutesById {
   __root__: typeof rootRouteImport
   '/': typeof IndexRoute
+  '/contacto': typeof ContactoRoute
+  '/cursos': typeof CursosRoute
+  '/nosotros': typeof NosotrosRoute
+  '/servicios': typeof ServiciosRoute
+  '/sitemap.xml': typeof SitemapDotxmlRoute
+  '/recursos/faq': typeof RecursosFaqRoute
+  '/recursos/guias': typeof RecursosGuiasRoute
+  '/recursos/': typeof RecursosIndexRoute
+  '/recursos/temas/$slug': typeof RecursosTemasSlugRoute
+  '/recursos/temas/': typeof RecursosTemasIndexRoute
 }
 export interface FileRouteTypes {
   fileRoutesByFullPath: FileRoutesByFullPath
-  fullPaths: '/'
+  fullPaths:
+    | '/'
+    | '/contacto'
+    | '/cursos'
+    | '/nosotros'
+    | '/servicios'
+    | '/sitemap.xml'
+    | '/recursos/faq'
+    | '/recursos/guias'
+    | '/recursos/'
+    | '/recursos/temas/$slug'
+    | '/recursos/temas/'
   fileRoutesByTo: FileRoutesByTo
-  to: '/'
-  id: '__root__' | '/'
+  to:
+    | '/'
+    | '/contacto'
+    | '/cursos'
+    | '/nosotros'
+    | '/servicios'
+    | '/sitemap.xml'
+    | '/recursos/faq'
+    | '/recursos/guias'
+    | '/recursos'
+    | '/recursos/temas/$slug'
+    | '/recursos/temas'
+  id:
+    | '__root__'
+    | '/'
+    | '/contacto'
+    | '/cursos'
+    | '/nosotros'
+    | '/servicios'
+    | '/sitemap.xml'
+    | '/recursos/faq'
+    | '/recursos/guias'
+    | '/recursos/'
+    | '/recursos/temas/$slug'
+    | '/recursos/temas/'
   fileRoutesById: FileRoutesById
 }
 export interface RootRouteChildren {
   IndexRoute: typeof IndexRoute
+  ContactoRoute: typeof ContactoRoute
+  CursosRoute: typeof CursosRoute
+  NosotrosRoute: typeof NosotrosRoute
+  ServiciosRoute: typeof ServiciosRoute
+  SitemapDotxmlRoute: typeof SitemapDotxmlRoute
+  RecursosFaqRoute: typeof RecursosFaqRoute
+  RecursosGuiasRoute: typeof RecursosGuiasRoute
+  RecursosIndexRoute: typeof RecursosIndexRoute
+  RecursosTemasSlugRoute: typeof RecursosTemasSlugRoute
+  RecursosTemasIndexRoute: typeof RecursosTemasIndexRoute
 }
 
 declare module '@tanstack/react-router' {
   interface FileRoutesByPath {
+    '/sitemap.xml': {
+      id: '/sitemap.xml'
+      path: '/sitemap.xml'
+      fullPath: '/sitemap.xml'
+      preLoaderRoute: typeof SitemapDotxmlRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/servicios': {
+      id: '/servicios'
+      path: '/servicios'
+      fullPath: '/servicios'
+      preLoaderRoute: typeof ServiciosRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/nosotros': {
+      id: '/nosotros'
+      path: '/nosotros'
+      fullPath: '/nosotros'
+      preLoaderRoute: typeof NosotrosRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/cursos': {
+      id: '/cursos'
+      path: '/cursos'
+      fullPath: '/cursos'
+      preLoaderRoute: typeof CursosRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/contacto': {
+      id: '/contacto'
+      path: '/contacto'
+      fullPath: '/contacto'
+      preLoaderRoute: typeof ContactoRouteImport
+      parentRoute: typeof rootRouteImport
+    }
     '/': {
       id: '/'
       path: '/'
@@ -48,22 +217,57 @@ declare module '@tanstack/react-router' {
       preLoaderRoute: typeof IndexRouteImport
       parentRoute: typeof rootRouteImport
     }
+    '/recursos/': {
+      id: '/recursos/'
+      path: '/recursos'
+      fullPath: '/recursos/'
+      preLoaderRoute: typeof RecursosIndexRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/recursos/guias': {
+      id: '/recursos/guias'
+      path: '/recursos/guias'
+      fullPath: '/recursos/guias'
+      preLoaderRoute: typeof RecursosGuiasRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/recursos/faq': {
+      id: '/recursos/faq'
+      path: '/recursos/faq'
+      fullPath: '/recursos/faq'
+      preLoaderRoute: typeof RecursosFaqRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/recursos/temas/': {
+      id: '/recursos/temas/'
+      path: '/recursos/temas'
+      fullPath: '/recursos/temas/'
+      preLoaderRoute: typeof RecursosTemasIndexRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/recursos/temas/$slug': {
+      id: '/recursos/temas/$slug'
+      path: '/recursos/temas/$slug'
+      fullPath: '/recursos/temas/$slug'
+      preLoaderRoute: typeof RecursosTemasSlugRouteImport
+      parentRoute: typeof rootRouteImport
+    }
   }
 }
 
 const rootRouteChildren: RootRouteChildren = {
   IndexRoute: IndexRoute,
+  ContactoRoute: ContactoRoute,
+  CursosRoute: CursosRoute,
+  NosotrosRoute: NosotrosRoute,
+  ServiciosRoute: ServiciosRoute,
+  SitemapDotxmlRoute: SitemapDotxmlRoute,
+  RecursosFaqRoute: RecursosFaqRoute,
+  RecursosGuiasRoute: RecursosGuiasRoute,
+  RecursosIndexRoute: RecursosIndexRoute,
+  RecursosTemasSlugRoute: RecursosTemasSlugRoute,
+  RecursosTemasIndexRoute: RecursosTemasIndexRoute,
 }
 export const routeTree = rootRouteImport
   ._addFileChildren(rootRouteChildren)
   ._addFileTypes<FileRouteTypes>()
-
-import type { getRouter } from './router.tsx'
-import type { startInstance } from './start.ts'
-declare module '@tanstack/react-start' {
-  interface Register {
-    ssr: true
-    router: Awaited<ReturnType<typeof getRouter>>
-    config: Awaited<ReturnType<typeof startInstance.getOptions>>
-  }
-}
