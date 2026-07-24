@@ -40,7 +40,7 @@ function Guias() {
               </article>
             ))}
           </div>
-          <p className="text-xs text-muted-foreground text-center mt-8">* {site.pricingNote}. Las portadas mostradas son temporales.</p>
+          <p className="text-xs text-muted-foreground text-center mt-8">* {site.pricingNote}.</p>
         </div>
       </section>
     </Layout>
