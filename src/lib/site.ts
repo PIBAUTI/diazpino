@@ -10,6 +10,12 @@ import cursoCalculoAsset from "@/assets/curso-calculo-laboral.jpg.asset.json";
 import cursoObligacionesAsset from "@/assets/curso-obligaciones-laborales.jpg.asset.json";
 import cursoDocAsset from "@/assets/curso-documentacion-laboral.jpg.asset.json";
 import guideCoverAsset from "@/assets/guide-cover.jpg.asset.json";
+import guiaPrestacionesAsset from "@/assets/guia-prestaciones.png.asset.json";
+import guiaUtilidadesAsset from "@/assets/guia-utilidades.png.asset.json";
+import guiaJornadaAsset from "@/assets/guia-jornada.jpg.asset.json";
+import guiaVacacionesAsset from "@/assets/guia-vacaciones.jpg.asset.json";
+import guiaMujerAsset from "@/assets/guia-mujer.png.asset.json";
+import guiaCestaticketsAsset from "@/assets/guia-cestatickets.jpg.asset.json";
 
 export const site = {
   name: "Díaz, Pino & Asociados",
