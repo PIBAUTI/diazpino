@@ -1,6 +1,7 @@
 import { createFileRoute } from "@tanstack/react-router";
 import { Layout, PageHero } from "@/components/site/Layout";
 import { guias, images, site, waLink } from "@/lib/site";
+import { breadcrumbLd } from "@/lib/breadcrumbs";
 import { MessageCircle, FileCheck } from "lucide-react";
 
 export const Route = createFileRoute("/recursos/guias")({
