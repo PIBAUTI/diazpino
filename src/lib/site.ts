@@ -131,12 +131,12 @@ export const cursos = [
 ];
 
 export const guias = [
-  { slug: "calculo-prestaciones", title: "Cálculo de Prestaciones", price: 15, desc: "PDF con tablas Excel modificables + consulta telefónica gratuita." },
-  { slug: "calculo-utilidades", title: "Cálculo de Utilidades", price: 15, desc: "PDF con tablas Excel modificables + consulta telefónica gratuita." },
-  { slug: "jornada-de-trabajo", title: "Jornada de Trabajo", price: 15, desc: "85 páginas, PDF y documentos modificables + consulta telefónica gratuita." },
-  { slug: "calculo-vacaciones", title: "Cálculo de Vacaciones", price: 15, desc: "PDF con tablas Excel modificables + consulta telefónica gratuita." },
-  { slug: "derechos-mujer-familia", title: "Derechos Laborales de la Mujer y la Familia", price: 10, desc: "Autora: Sol Díaz. PDF + consulta telefónica gratuita." },
-  { slug: "beneficio-alimentacion", title: "Beneficio de Alimentación (Cestatickets)", price: 35, desc: "PDF con tablas modificables + consulta telefónica gratuita." },
+  { slug: "calculo-prestaciones", title: "Cálculo de Prestaciones", price: 15, image: images.guiaPrestaciones, desc: "PDF con tablas Excel modificables + consulta telefónica gratuita." },
+  { slug: "calculo-utilidades", title: "Cálculo de Utilidades", price: 15, image: images.guiaUtilidades, desc: "PDF con tablas Excel modificables + consulta telefónica gratuita." },
+  { slug: "jornada-de-trabajo", title: "Jornada de Trabajo", price: 15, image: images.guiaJornada, desc: "85 páginas, PDF y documentos modificables + consulta telefónica gratuita." },
+  { slug: "calculo-vacaciones", title: "Cálculo de Vacaciones", price: 15, image: images.guiaVacaciones, desc: "PDF con tablas Excel modificables + consulta telefónica gratuita." },
+  { slug: "derechos-mujer-familia", title: "Derechos Laborales de la Mujer y la Familia", price: 15, image: images.guiaMujer, desc: "Autora: Sol Díaz. PDF + consulta telefónica gratuita." },
+  { slug: "beneficio-alimentacion", title: "Beneficio de Alimentación (Cestatickets)", price: 15, image: images.guiaCestatickets, desc: "PDF con tablas modificables + consulta telefónica gratuita." },
 ];
 
 export const temas = [
