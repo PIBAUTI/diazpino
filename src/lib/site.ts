@@ -57,6 +57,12 @@ export const images = {
   cursoObligaciones: cursoObligacionesAsset.url,
   cursoDoc: cursoDocAsset.url,
   guideCover: guideCoverAsset.url,
+  guiaPrestaciones: guiaPrestacionesAsset.url,
+  guiaUtilidades: guiaUtilidadesAsset.url,
+  guiaJornada: guiaJornadaAsset.url,
+  guiaVacaciones: guiaVacacionesAsset.url,
+  guiaMujer: guiaMujerAsset.url,
+  guiaCestatickets: guiaCestaticketsAsset.url,
 };
 
 export function waLink(message: string): string {
