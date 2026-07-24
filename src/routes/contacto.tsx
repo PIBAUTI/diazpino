@@ -2,6 +2,7 @@ import { createFileRoute } from "@tanstack/react-router";
 import { useState } from "react";
 import { Layout, PageHero } from "@/components/site/Layout";
 import { site, waLink } from "@/lib/site";
+import { breadcrumbScript } from "@/lib/breadcrumbs";
 import { MessageCircle, Phone, Mail, MapPin, Video, Building2, FileText } from "lucide-react";
 
 export const Route = createFileRoute("/contacto")({
@@ -14,6 +15,7 @@ export const Route = createFileRoute("/contacto")({
       { property: "og:url", content: "https://diazpino.com/contacto" },
     ],
     links: [{ rel: "canonical", href: "https://diazpino.com/contacto" }],
+    scripts: [breadcrumbScript([{ name: "Inicio", path: "/" }, { name: "Contacto", path: "/contacto" }])],
   }),
   component: Contacto,
 });
