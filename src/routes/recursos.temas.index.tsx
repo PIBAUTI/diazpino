@@ -2,6 +2,7 @@ import { createFileRoute, Link } from "@tanstack/react-router";
 import { useState } from "react";
 import { Layout, PageHero } from "@/components/site/Layout";
 import { temas } from "@/lib/site";
+import { breadcrumbScript } from "@/lib/breadcrumbs";
 import { Search, ArrowRight } from "lucide-react";
 
 export const Route = createFileRoute("/recursos/temas/")({
@@ -14,6 +15,11 @@ export const Route = createFileRoute("/recursos/temas/")({
       { property: "og:url", content: "https://diazpino.com/recursos/temas" },
     ],
     links: [{ rel: "canonical", href: "https://diazpino.com/recursos/temas" }],
+    scripts: [breadcrumbScript([
+      { name: "Inicio", path: "/" },
+      { name: "Recursos", path: "/recursos" },
+      { name: "Temas", path: "/recursos/temas" },
+    ])],
   }),
   component: Temas,
 });
