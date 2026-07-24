@@ -43,6 +43,23 @@ export const Route = createFileRoute("/recursos/guias")({
           })),
         }),
       },
+      {
+        type: "application/ld+json",
+        children: JSON.stringify(breadcrumbLd([
+          { name: "Inicio", path: "/" },
+          { name: "Recursos", path: "/recursos" },
+          { name: "Guías", path: "/recursos/guias" },
+        ])),
+      },
+      ...guias.map((g) => ({
+        type: "application/ld+json",
+        children: JSON.stringify(breadcrumbLd([
+          { name: "Inicio", path: "/" },
+          { name: "Recursos", path: "/recursos" },
+          { name: "Guías", path: "/recursos/guias" },
+          { name: g.title, path: `/recursos/guias#${g.slug}` },
+        ])),
+      })),
     ],
   }),
   component: Guias,
