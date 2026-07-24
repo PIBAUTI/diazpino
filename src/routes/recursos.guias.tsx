@@ -13,6 +13,36 @@ export const Route = createFileRoute("/recursos/guias")({
       { property: "og:url", content: "https://diazpino.com/recursos/guias" },
     ],
     links: [{ rel: "canonical", href: "https://diazpino.com/recursos/guias" }],
+    scripts: [
+      {
+        type: "application/ld+json",
+        children: JSON.stringify({
+          "@context": "https://schema.org",
+          "@type": "ItemList",
+          name: "Guías Laborales Díaz Pino",
+          itemListElement: guias.map((g, i) => ({
+            "@type": "ListItem",
+            position: i + 1,
+            item: {
+              "@type": "Product",
+              name: g.title,
+              description: g.desc,
+              image: g.image,
+              brand: { "@type": "Brand", name: "Díaz, Pino & Asociados" },
+              category: "Guía laboral (PDF descargable)",
+              offers: {
+                "@type": "Offer",
+                price: g.price.toFixed(2),
+                priceCurrency: "USD",
+                availability: "https://schema.org/InStock",
+                url: `https://diazpino.com/recursos/guias#${g.slug}`,
+                seller: { "@type": "Organization", name: "Díaz, Pino & Asociados" },
+              },
+            },
+          })),
+        }),
+      },
+    ],
   }),
   component: Guias,
 });
