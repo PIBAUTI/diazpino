@@ -10,6 +10,12 @@ import cursoCalculoAsset from "@/assets/curso-calculo-laboral.jpg.asset.json";
 import cursoObligacionesAsset from "@/assets/curso-obligaciones-laborales.jpg.asset.json";
 import cursoDocAsset from "@/assets/curso-documentacion-laboral.jpg.asset.json";
 import guideCoverAsset from "@/assets/guide-cover.jpg.asset.json";
+import guiaPrestacionesAsset from "@/assets/guia-prestaciones.png.asset.json";
+import guiaUtilidadesAsset from "@/assets/guia-utilidades.png.asset.json";
+import guiaJornadaAsset from "@/assets/guia-jornada.jpg.asset.json";
+import guiaVacacionesAsset from "@/assets/guia-vacaciones.jpg.asset.json";
+import guiaMujerAsset from "@/assets/guia-mujer.png.asset.json";
+import guiaCestaticketsAsset from "@/assets/guia-cestatickets.jpg.asset.json";
 
 export const site = {
   name: "Díaz, Pino & Asociados",
@@ -51,6 +57,12 @@ export const images = {
   cursoObligaciones: cursoObligacionesAsset.url,
   cursoDoc: cursoDocAsset.url,
   guideCover: guideCoverAsset.url,
+  guiaPrestaciones: guiaPrestacionesAsset.url,
+  guiaUtilidades: guiaUtilidadesAsset.url,
+  guiaJornada: guiaJornadaAsset.url,
+  guiaVacaciones: guiaVacacionesAsset.url,
+  guiaMujer: guiaMujerAsset.url,
+  guiaCestatickets: guiaCestaticketsAsset.url,
 };
 
 export function waLink(message: string): string {
@@ -119,12 +131,12 @@ export const cursos = [
 ];
 
 export const guias = [
-  { slug: "calculo-prestaciones", title: "Cálculo de Prestaciones", price: 15, desc: "PDF con tablas Excel modificables + consulta telefónica gratuita." },
-  { slug: "calculo-utilidades", title: "Cálculo de Utilidades", price: 15, desc: "PDF con tablas Excel modificables + consulta telefónica gratuita." },
-  { slug: "jornada-de-trabajo", title: "Jornada de Trabajo", price: 15, desc: "85 páginas, PDF y documentos modificables + consulta telefónica gratuita." },
-  { slug: "calculo-vacaciones", title: "Cálculo de Vacaciones", price: 15, desc: "PDF con tablas Excel modificables + consulta telefónica gratuita." },
-  { slug: "derechos-mujer-familia", title: "Derechos Laborales de la Mujer y la Familia", price: 10, desc: "Autora: Sol Díaz. PDF + consulta telefónica gratuita." },
-  { slug: "beneficio-alimentacion", title: "Beneficio de Alimentación (Cestatickets)", price: 35, desc: "PDF con tablas modificables + consulta telefónica gratuita." },
+  { slug: "calculo-prestaciones", title: "Cálculo de Prestaciones", price: 15, image: images.guiaPrestaciones, desc: "PDF con tablas Excel modificables + consulta telefónica gratuita." },
+  { slug: "calculo-utilidades", title: "Cálculo de Utilidades", price: 15, image: images.guiaUtilidades, desc: "PDF con tablas Excel modificables + consulta telefónica gratuita." },
+  { slug: "jornada-de-trabajo", title: "Jornada de Trabajo", price: 15, image: images.guiaJornada, desc: "85 páginas, PDF y documentos modificables + consulta telefónica gratuita." },
+  { slug: "calculo-vacaciones", title: "Cálculo de Vacaciones", price: 15, image: images.guiaVacaciones, desc: "PDF con tablas Excel modificables + consulta telefónica gratuita." },
+  { slug: "derechos-mujer-familia", title: "Derechos Laborales de la Mujer y la Familia", price: 15, image: images.guiaMujer, desc: "Autora: Sol Díaz. PDF + consulta telefónica gratuita." },
+  { slug: "beneficio-alimentacion", title: "Beneficio de Alimentación (Cestatickets)", price: 15, image: images.guiaCestatickets, desc: "PDF con tablas modificables + consulta telefónica gratuita." },
 ];
 
 export const temas = [

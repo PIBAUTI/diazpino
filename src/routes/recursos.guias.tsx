@@ -26,11 +26,8 @@ function Guias() {
           <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
             {guias.map((g) => (
               <article key={g.slug} className="card-soft overflow-hidden flex flex-col">
-                <div className="aspect-[4/5] bg-muted relative">
-                  <img src={images.guideCover} alt={`Portada ${g.title}`} loading="lazy" className="w-full h-full object-cover" width={400} height={500} />
-                  <div className="absolute bottom-0 inset-x-0 p-3 bg-gradient-to-t from-brand/95 to-transparent">
-                    <p className="text-white font-extrabold uppercase text-sm leading-tight">{g.title}</p>
-                  </div>
+                <div className="aspect-[4/5] bg-muted relative overflow-hidden">
+                  <img src={g.image} alt={`Portada ${g.title}`} loading="lazy" className="w-full h-full object-cover object-center" width={400} height={500} />
                 </div>
                 <div className="p-5 flex flex-col flex-1">
                   <p className="text-sm text-muted-foreground">{g.desc}</p>
@@ -43,7 +40,7 @@ function Guias() {
               </article>
             ))}
           </div>
-          <p className="text-xs text-muted-foreground text-center mt-8">* {site.pricingNote}. Las portadas mostradas son temporales.</p>
+          <p className="text-xs text-muted-foreground text-center mt-8">* {site.pricingNote}.</p>
         </div>
       </section>
     </Layout>
