@@ -1,6 +1,7 @@
 import { createFileRoute, notFound, Link } from "@tanstack/react-router";
 import { Layout } from "@/components/site/Layout";
 import { temas, waLink } from "@/lib/site";
+import { breadcrumbLd } from "@/lib/breadcrumbs";
 import { MessageCircle, ArrowLeft } from "lucide-react";
 
 export const Route = createFileRoute("/recursos/temas/$slug")({
@@ -21,6 +22,17 @@ export const Route = createFileRoute("/recursos/temas/$slug")({
         ]
       : [],
     links: loaderData ? [{ rel: "canonical", href: `https://diazpino.com/recursos/temas/${loaderData.slug}` }] : [],
+    scripts: loaderData
+      ? [{
+          type: "application/ld+json",
+          children: JSON.stringify(breadcrumbLd([
+            { name: "Inicio", path: "/" },
+            { name: "Recursos", path: "/recursos" },
+            { name: "Temas", path: "/recursos/temas" },
+            { name: loaderData.title, path: `/recursos/temas/${loaderData.slug}` },
+          ])),
+        }]
+      : [],
   }),
   notFoundComponent: () => (
     <Layout>

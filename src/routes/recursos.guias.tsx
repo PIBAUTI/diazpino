@@ -1,6 +1,7 @@
 import { createFileRoute } from "@tanstack/react-router";
 import { Layout, PageHero } from "@/components/site/Layout";
 import { guias, images, site, waLink } from "@/lib/site";
+import { breadcrumbLd } from "@/lib/breadcrumbs";
 import { MessageCircle, FileCheck } from "lucide-react";
 
 export const Route = createFileRoute("/recursos/guias")({
@@ -42,6 +43,23 @@ export const Route = createFileRoute("/recursos/guias")({
           })),
         }),
       },
+      {
+        type: "application/ld+json",
+        children: JSON.stringify(breadcrumbLd([
+          { name: "Inicio", path: "/" },
+          { name: "Recursos", path: "/recursos" },
+          { name: "Guías", path: "/recursos/guias" },
+        ])),
+      },
+      ...guias.map((g) => ({
+        type: "application/ld+json",
+        children: JSON.stringify(breadcrumbLd([
+          { name: "Inicio", path: "/" },
+          { name: "Recursos", path: "/recursos" },
+          { name: "Guías", path: "/recursos/guias" },
+          { name: g.title, path: `/recursos/guias#${g.slug}` },
+        ])),
+      })),
     ],
   }),
   component: Guias,

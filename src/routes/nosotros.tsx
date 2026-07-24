@@ -1,6 +1,7 @@
 import { createFileRoute } from "@tanstack/react-router";
 import { Layout, PageHero } from "@/components/site/Layout";
 import { images, site } from "@/lib/site";
+import { breadcrumbScript } from "@/lib/breadcrumbs";
 import { Mail } from "lucide-react";
 
 export const Route = createFileRoute("/nosotros")({
@@ -14,6 +15,7 @@ export const Route = createFileRoute("/nosotros")({
       { property: "og:image", content: `https://diazpino.com${images.avila}` },
     ],
     links: [{ rel: "canonical", href: "https://diazpino.com/nosotros" }],
+    scripts: [breadcrumbScript([{ name: "Inicio", path: "/" }, { name: "Nosotros", path: "/nosotros" }])],
   }),
   component: Nosotros,
 });

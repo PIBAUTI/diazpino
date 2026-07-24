@@ -1,6 +1,7 @@
 import { createFileRoute } from "@tanstack/react-router";
 import { Layout, PageHero } from "@/components/site/Layout";
 import { faqs, waLink } from "@/lib/site";
+import { breadcrumbLd } from "@/lib/breadcrumbs";
 import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/components/ui/accordion";
 import { MessageCircle } from "lucide-react";
 
@@ -14,18 +15,28 @@ export const Route = createFileRoute("/recursos/faq")({
       { property: "og:url", content: "https://diazpino.com/recursos/faq" },
     ],
     links: [{ rel: "canonical", href: "https://diazpino.com/recursos/faq" }],
-    scripts: [{
-      type: "application/ld+json",
-      children: JSON.stringify({
-        "@context": "https://schema.org",
-        "@type": "FAQPage",
-        mainEntity: faqs.map((f) => ({
-          "@type": "Question",
-          name: f.q,
-          acceptedAnswer: { "@type": "Answer", text: f.a },
-        })),
-      }),
-    }],
+    scripts: [
+      {
+        type: "application/ld+json",
+        children: JSON.stringify({
+          "@context": "https://schema.org",
+          "@type": "FAQPage",
+          mainEntity: faqs.map((f) => ({
+            "@type": "Question",
+            name: f.q,
+            acceptedAnswer: { "@type": "Answer", text: f.a },
+          })),
+        }),
+      },
+      {
+        type: "application/ld+json",
+        children: JSON.stringify(breadcrumbLd([
+          { name: "Inicio", path: "/" },
+          { name: "Recursos", path: "/recursos" },
+          { name: "Preguntas frecuentes", path: "/recursos/faq" },
+        ])),
+      },
+    ],
   }),
   component: FAQ,
 });
