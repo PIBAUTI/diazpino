@@ -55,7 +55,7 @@ function Guias() {
         <div className="container-page">
           <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
             {guias.map((g) => (
-              <article key={g.slug} className="card-soft overflow-hidden flex flex-col">
+              <article key={g.slug} id={g.slug} className="card-soft overflow-hidden flex flex-col">
                 <div className="aspect-[4/5] bg-muted relative overflow-hidden">
                   <img src={g.image} alt={`Portada ${g.title}`} loading="lazy" className="w-full h-full object-cover object-center" width={400} height={500} />
                 </div>
