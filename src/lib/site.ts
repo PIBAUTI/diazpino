@@ -1,21 +1,21 @@
-import logoAsset from "@/assets/logo-dpa.png.asset.json";
-import faviconAsset from "@/assets/favicon.ico.asset.json";
-import heroAsset from "@/assets/hero.jpg.asset.json";
-import avilaAsset from "@/assets/imagen-avila.jpg.asset.json";
-import asesoriaAsset from "@/assets/asesoria-telefonica.png.asset.json";
-import solAsset from "@/assets/sol-diaz.jpg.asset.json";
-import juanAsset from "@/assets/juan-bautista-pino.jpg.asset.json";
-import cursoSalarioAsset from "@/assets/curso-salario-dolarizacion.jpg.asset.json";
-import cursoCalculoAsset from "@/assets/curso-calculo-laboral.jpg.asset.json";
-import cursoObligacionesAsset from "@/assets/curso-obligaciones-laborales.jpg.asset.json";
-import cursoDocAsset from "@/assets/curso-documentacion-laboral.jpg.asset.json";
-import guideCoverAsset from "@/assets/guide-cover.jpg.asset.json";
-import guiaPrestacionesAsset from "@/assets/guia-prestaciones.png.asset.json";
-import guiaUtilidadesAsset from "@/assets/guia-utilidades.png.asset.json";
-import guiaJornadaAsset from "@/assets/guia-jornada.jpg.asset.json";
-import guiaVacacionesAsset from "@/assets/guia-vacaciones.jpg.asset.json";
-import guiaMujerAsset from "@/assets/guia-mujer.png.asset.json";
-import guiaCestaticketsAsset from "@/assets/guia-cestatickets.jpg.asset.json";
+import logoUrl from "@/assets/logo-dpa.png";
+import faviconUrl from "@/assets/favicon.ico";
+import heroUrl from "@/assets/hero.jpg";
+import avilaUrl from "@/assets/imagen-avila.jpg";
+import asesoriaUrl from "@/assets/asesoria-telefonica.png";
+import solUrl from "@/assets/sol-diaz.jpg";
+import juanUrl from "@/assets/juan-bautista-pino.jpg";
+import cursoSalarioUrl from "@/assets/curso-salario-dolarizacion.jpg";
+import cursoCalculoUrl from "@/assets/curso-calculo-laboral.jpg";
+import cursoObligacionesUrl from "@/assets/curso-obligaciones-laborales.jpg";
+import cursoDocUrl from "@/assets/curso-documentacion-laboral.jpg";
+import guideCoverUrl from "@/assets/guide-cover.jpg";
+import guiaPrestacionesUrl from "@/assets/guia-prestaciones.png";
+import guiaUtilidadesUrl from "@/assets/guia-utilidades.png";
+import guiaJornadaUrl from "@/assets/guia-jornada.jpg";
+import guiaVacacionesUrl from "@/assets/guia-vacaciones.jpg";
+import guiaMujerUrl from "@/assets/guia-mujer.png";
+import guiaCestaticketsUrl from "@/assets/guia-cestatickets.jpg";
 
 export const site = {
   name: "Díaz, Pino & Asociados",
@@ -45,24 +45,24 @@ export const site = {
 };
 
 export const images = {
-  logo: logoAsset.url,
-  favicon: faviconAsset.url,
-  hero: heroAsset.url,
-  avila: avilaAsset.url,
-  asesoria: asesoriaAsset.url,
-  sol: solAsset.url,
-  juan: juanAsset.url,
-  cursoSalario: cursoSalarioAsset.url,
-  cursoCalculo: cursoCalculoAsset.url,
-  cursoObligaciones: cursoObligacionesAsset.url,
-  cursoDoc: cursoDocAsset.url,
-  guideCover: guideCoverAsset.url,
-  guiaPrestaciones: guiaPrestacionesAsset.url,
-  guiaUtilidades: guiaUtilidadesAsset.url,
-  guiaJornada: guiaJornadaAsset.url,
-  guiaVacaciones: guiaVacacionesAsset.url,
-  guiaMujer: guiaMujerAsset.url,
-  guiaCestatickets: guiaCestaticketsAsset.url,
+  logo: logoUrl,
+  favicon: faviconUrl,
+  hero: heroUrl,
+  avila: avilaUrl,
+  asesoria: asesoriaUrl,
+  sol: solUrl,
+  juan: juanUrl,
+  cursoSalario: cursoSalarioUrl,
+  cursoCalculo: cursoCalculoUrl,
+  cursoObligaciones: cursoObligacionesUrl,
+  cursoDoc: cursoDocUrl,
+  guideCover: guideCoverUrl,
+  guiaPrestaciones: guiaPrestacionesUrl,
+  guiaUtilidades: guiaUtilidadesUrl,
+  guiaJornada: guiaJornadaUrl,
+  guiaVacaciones: guiaVacacionesUrl,
+  guiaMujer: guiaMujerUrl,
+  guiaCestatickets: guiaCestaticketsUrl,
 };
 
 export function waLink(message: string): string {
