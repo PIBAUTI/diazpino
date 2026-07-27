@@ -80,6 +80,116 @@ const articles: Record<string, ArticleContent> = {
     ],
     extraCta: { label: "Conocer la Asesoría Continua", to: "/servicios#asesoria-continua" },
   },
+  "anticipo-prestaciones": {
+    intro:
+      "El anticipo de prestaciones sociales permite al trabajador disponer de parte de lo acreditado como garantía para cubrir necesidades específicas previstas en la ley. A continuación, el marco legal aplicable y las recomendaciones prácticas.",
+    sections: [
+      {
+        heading: "ART. 144 LOTTT",
+        body: (
+          <>
+            <p>El trabajador tendrá derecho al anticipo hasta de un setenta y cinco por ciento (75%) de lo acreditado o depositado como garantía de sus prestaciones sociales, para satisfacer obligaciones derivadas de:</p>
+            <ul className="list-disc pl-6 mt-2 space-y-1">
+              <li>La construcción, adquisición, mejora o reparación de vivienda para él y su familia;</li>
+              <li>La liberación de hipoteca o de cualquier otro gravamen sobre vivienda de su propiedad;</li>
+              <li>Las pensiones escolares para él, su cónyuge, hijos o con quien haga vida marital; y</li>
+              <li>Los gastos por atención médica y hospitalaria de él, su cónyuge, hijos o con quien haga vida marital.</li>
+            </ul>
+          </>
+        ),
+      },
+      {
+        heading: "FRECUENCIA DE LOS ANTICIPOS",
+        body: (
+          <>
+            <p className="font-semibold">Art. 74 Reglamento de la LOTTT</p>
+            <p className="mt-2">El trabajador o trabajadora tendrá derecho a solicitar una (1) vez al año anticipos de lo acreditado o depositado, o crédito o aval, salvo en los casos de gastos por atención médica u hospitalaria.</p>
+          </>
+        ),
+      },
+      {
+        heading: "INFORMACIÓN SOBRE EL DESTINO DE LOS ANTICIPOS",
+        body: (
+          <p>El empleador podrá exigir al trabajador o trabajadora información sobre el destino de la suma de dinero solicitado en anticipo, o del crédito o aval, según fuere el caso y las pruebas que lo evidencien.</p>
+        ),
+      },
+      {
+        heading: "RECOMENDACIONES PRÁCTICAS",
+        body: (
+          <ul className="list-disc pl-6 space-y-2">
+            <li>Realizar el cálculo de la garantía de prestaciones sociales que corresponde a cada trabajador.</li>
+            <li>El monto que se puede entregar a título de anticipo es sólo el 75% de lo acreditado como garantía de prestaciones sociales.</li>
+            <li>A fin de otorgar el anticipo la entidad de trabajo debe solicitar los soportes de los gastos que desea cubrir el trabajador con sus prestaciones sociales: presupuestos, facturas, proyecto de construcción, opción compra-venta, borrador de documento de liberación de hipoteca, informes médicos, constancias de estudio, convenios de pago, etc.</li>
+            <li>La solicitud del anticipo debe ser realizada únicamente por el trabajador para atender a los gastos previstos en el Art. 144 LOTTT, debe hacerlo presentando los soportes correspondientes, debe ser firmado por el trabajador y debe colocar sus huellas dactilares.</li>
+            <li>La solicitud de adelanto de prestaciones sociales, el cálculo que se realice a tal efecto: cálculo de garantía de prestaciones sociales y el comprobante de pago debidamente recibido por el trabajador debe ser archivado en el expediente de cada trabajador.</li>
+            <li>El monto adelantado se deducirá del fondo de garantía de prestaciones sociales.</li>
+          </ul>
+        ),
+      },
+    ],
+    extraCta: { label: "Ver Guía de Cálculo de Prestaciones ($15)", to: "/recursos/guias#calculo-prestaciones" },
+  },
+  "periodo-prueba": {
+    intro:
+      "El período de prueba permite a las partes evaluar la conveniencia de la relación de trabajo. Revisamos su regulación, límites de duración, nulidades y su interacción con los contratos a tiempo determinado según la LOTTT y la jurisprudencia de la Sala de Casación Social.",
+    sections: [
+      {
+        heading: "¿Cuál es el objeto de un contrato de periodo de prueba?",
+        body: (
+          <>
+            <p>El objeto del mismo es que el trabajador o trabajadora juzgue si las condiciones de trabajo son de su conveniencia y el patrono o patrona aprecie sus conocimientos y aptitudes.</p>
+            <p className="mt-2">El periodo de prueba no estaba regulado de forma expresa en LOT, tampoco está desarrollado en la nueva LOTTT, lo que se desprende de ambas es el tiempo de duración de dicho periodo, cuando se establece el momento en que los trabajadores gozan de estabilidad, en la LOT después de los tres meses de trabajo, y en la LOTTT a partir del primer mes de servicios.</p>
+            <p className="mt-2 font-semibold">El desarrollo sobre el periodo de prueba se encuentra en el Reglamento de la LOT artículo 25:</p>
+            <p className="mt-2 italic">"Las partes podrán pactar en los contratos de trabajo celebrados por escrito un período de prueba que no excederá de noventa (30) días continuos*, a objeto de que el trabajador o trabajadora juzgue si las condiciones de trabajo son de su conveniencia y el patrono o patrona aprecie sus conocimientos y aptitudes."</p>
+          </>
+        ),
+      },
+      {
+        heading: "¿Qué le corresponde a un trabajador al terminar el contrato por periodo de prueba?",
+        body: (
+          <>
+            <p>Durante el período de prueba, cualquiera de las partes podrá dar por extinguido el contrato de trabajo sin que hubiere lugar a indemnización alguna, sin perjuicio de los derechos que se hubieren causado en proporción al tiempo trabajado, así como el preaviso correspondiente de conformidad con el artículo 104 de la Ley Orgánica del Trabajo.</p>
+            <p className="mt-2"><strong>ADAPTANDO A LA LOTTT:</strong> En proporción al tiempo trabajado: no más de 30 días continuos no corresponde ni vacaciones fraccionadas ni utilidades fraccionadas, ya que estas se pagan por meses completos trabajados. Y en la LOTTT no se prevé la figura del preaviso por parte del empleador, así que éste no está obligado a otorgarlo.</p>
+            <p className="mt-2 text-sm text-muted-foreground">*Adaptándolo a la nueva LOTTT el periodo de prueba no puede exceder de treinta (30) días continuos. En la LOT ERAN 90 DÍAS CONTINUOS.</p>
+          </>
+        ),
+      },
+      {
+        heading: "NULIDAD DEL CONTRATO POR PERIODO DE PRUEBA",
+        body: (
+          <p><strong>Parágrafo Primero:</strong> Será nula la estipulación que establezca un período de prueba cuando el trabajador o trabajadora hubiere desempeñado las mismas o similares funciones con anterioridad en la empresa, bajo cualquier modalidad.</p>
+        ),
+      },
+      {
+        heading: "PERIODO DE PRUEBA Y ANTIGÜEDAD DEL TRABAJADOR",
+        body: (
+          <>
+            <p><strong>Parágrafo Segundo:</strong> El período de prueba se tomará en consideración para determinar la antigüedad del trabajador o trabajadora, cuando éste continúe prestando servicios una vez vencido aquél.</p>
+            <p className="mt-3">Este punto ha sido tratado por la Sala de Casación Social:</p>
+            <p className="mt-2 italic">"Observa la Sala que en la cláusula cuarta del contrato de trabajo suscrito entre las partes a que se hizo referencia precedentemente fue pactado un período de prueba, entonces luce conveniente, traer a colación la definición que a esta institución laboral le ha conferido la doctrina patria, observando que el mismo ha sido concebido como la oportunidad que inicialmente tienen las partes involucradas en una relación de trabajo, de conocer las bondades o inconvenientes de la contraprestación recibida por cada una de ellas, sin que deriven consecuencias económico-legales perjudiciales para la parte que considere la inconveniencia de la prosecución de la relación.</p>
+            <p className="mt-2">Por otra parte, los contratos de trabajo por tiempo determinado son aquellos en los cuales se ha limitado la duración de los servicios del trabajador, es decir, concluyen con el vencimiento del término prefijado.</p>
+          </>
+        ),
+      },
+      {
+        heading: "¿Se puede celebrar un contrato por tiempo determinado en el que se establezca periodo de prueba?",
+        body: (
+          <>
+            <p>Continuando la cita:</p>
+            <p className="mt-2 italic">"…A criterio de esta Sala, resulta incompatible con la suscripción de un contrato por tiempo determinado el establecimiento de un período de prueba, ya que la intención teleológica de éste, tal y como se refirió en los párrafos precedentes, va dirigida a la comprobación de habilidades, conveniencias o bondades de una parte para con la otra en un contrato por tiempo indefinido, no para este tipo de contratos donde las partes ad initio han establecido el lapso de vigencia, cuando así lo exija la naturaleza del servicio, o tenga por objeto sustituir lícita y temporalmente a un trabajador, o en el caso de la contratación de personal venezolano para laborar en el exterior…"</p>
+            <p className="mt-2 italic">"…En el presente caso, se observa, que las partes celebraron un contrato de trabajo a tiempo determinado, en cuya cláusula quinta se indica de manera imprecisa un periodo de prueba de 90 días, por lo que se estipula en el contenido de dicho contrato a término un período de prueba. En este sentido, dada la naturaleza de ambos contratos, a término y período de prueba, resulta incompatible establecer en un contrato de trabajo a tiempo determinado un período de prueba, por cuanto este último tiene por objetivo la comprobación de la aptitud profesional del contratado, así como su adaptación a la tarea encomendada, mientras que en el contrato a término subsiste una obligación de la prestación del servicio, bajo subordinación, en el cual el contratado adquiere una obligación de hacer y el contratante adquiere una obligación de dar en un tiempo prefijado, sin que se someta a la comprobación de aptitudes o habilidades."</p>
+          </>
+        ),
+      },
+      {
+        heading: "¿Qué consecuencia tiene el terminar un contrato por tiempo determinado alegando no superación del periodo de prueba?",
+        body: (
+          <p>En tal sentido la consecuencia de la terminación anticipada de un contrato por tiempo determinado alegando que en el mismo se estableció un periodo de prueba y que la terminación se hace dentro de tal periodo (actualmente treinta días continuos), dará lugar al pago al trabajador de las indemnizaciones que serán igual al importe de los salarios que percibiría hasta la fecha de terminación del Contrato y el monto que le corresponda por las prestaciones sociales hasta la fecha de terminación establecida en el contrato.</p>
+        ),
+      },
+    ],
+    extraCta: { label: "Conocer la Asesoría Continua", to: "/servicios#asesoria-continua" },
+  },
 };
 
 export const Route = createFileRoute("/recursos/temas/$slug")({
