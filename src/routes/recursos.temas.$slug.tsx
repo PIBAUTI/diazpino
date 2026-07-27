@@ -247,10 +247,16 @@ function TemaPage() {
 
           {article ? (
             <div className="mt-10 space-y-6">
-              {article.qas.map((qa, i) => (
-                <div key={i} className="card-soft p-6">
+              {article.qas?.map((qa, i) => (
+                <div key={`qa-${i}`} className="card-soft p-6">
                   <p className="font-bold text-brand text-lg">{qa.q}</p>
                   <div className="mt-2 text-ink leading-relaxed">{qa.a}</div>
+                </div>
+              ))}
+              {article.sections?.map((s, i) => (
+                <div key={`s-${i}`} className="card-soft p-6">
+                  <p className="font-bold text-brand text-lg">{s.heading}</p>
+                  <div className="mt-2 text-ink leading-relaxed">{s.body}</div>
                 </div>
               ))}
             </div>
