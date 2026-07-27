@@ -5,9 +5,11 @@ import { breadcrumbLd } from "@/lib/breadcrumbs";
 import { MessageCircle, ArrowLeft, BookOpen } from "lucide-react";
 
 type QA = { q: string; a: React.ReactNode };
+type Section = { heading: string; body: React.ReactNode };
 type ArticleContent = {
   intro: string;
-  qas: QA[];
+  qas?: QA[];
+  sections?: Section[];
   extraCta?: { label: string; to: string; note?: string };
 };
 
