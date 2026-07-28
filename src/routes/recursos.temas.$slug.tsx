@@ -555,6 +555,397 @@ const articles: Record<string, ArticleContent> = {
     ],
     extraCta: { label: "Conocer la Asesoría Continua", to: "/servicios#asesoria-continua" },
   },
+  prestaciones: {
+    intro:
+      "Preguntas frecuentes sobre prestaciones sociales: fraccionamiento de trimestres, días adicionales de antigüedad, indemnización por despido, anticipos, intereses de mora, liquidaciones y reclamos, con base en la LOTTT.",
+    sections: [
+      {
+        heading: "FRACCIONAMIENTO DE DÍAS DE PRESTACIONES SOCIALES",
+        body: (
+          <>
+            <p className="font-bold">¿Se fraccionan los días de prestaciones sociales?</p>
+            <p className="mt-2">No se fraccionan los días de prestaciones sociales en el último mes trabajado.</p>
+            <p className="mt-2">Si la relación de trabajo termina antes de los tres (3) primeros meses, establece el literal E del artículo 142 LOTTT, que se pagarán 5 días por mes trabajado o fracción. Es decir por un mes completo trabajado: 5 días. Por fracción del segundo mes o por el segundo mes completo trabajado: 10 días y por fracción del tercer mes o el tercer mes completo trabajado: 15 días.</p>
+            <p className="mt-2">Algunos jueces aplican de forma análoga este mismo criterio cuando la relación de trabajo termina en fracción de trimestre. Por ejemplo un trabajador con 5 meses de servicios:</p>
+            <ul className="list-disc pl-6 mt-2 space-y-1">
+              <li>15 días por el primer trimestre</li>
+              <li>5 días por el 4to mes</li>
+              <li>5 días por el 5to mes</li>
+              <li>En total 25 días.</li>
+            </ul>
+            <p className="mt-2">Pero en aplicación del literal A del artículo 142 LOTTT, el derecho al pago del trimestre se adquiere al iniciar el trimestre. En el ejemplo del trabajador con 5 meses de servicio, le correspondería:</p>
+            <ul className="list-disc pl-6 mt-2 space-y-1">
+              <li>15 días por el primer trimestre</li>
+              <li>15 días por haber iniciado el segundo trimestre</li>
+              <li>En total: 30 días</li>
+            </ul>
+          </>
+        ),
+      },
+      {
+        heading: "DÍAS ADICIONALES DE ANTIGÜEDAD",
+        body: (
+          <>
+            <p className="font-bold">¿Qué debemos hacer con los días adicionales de antigüedad: los pagamos o los depositamos?</p>
+            <p className="mt-2">Establece el Artículo 142 LOTTT, Literal B:</p>
+            <p className="mt-2 italic">"Adicionalmente y después del primer año de servicio, el patrono o patrona 'DEPOSITARÁ' a cada trabajador o trabajadora dos días de salario, por cada año, acumulativos hasta treinta días de salario"</p>
+            <p className="mt-2">El artículo 108 de la LOT, establecía:</p>
+            <p className="mt-2 italic">"el patrono PAGARÁ a cada trabajador o trabajadora dos días de salario, por cada año, acumulativos hasta treinta días de salario"</p>
+            <p className="mt-2">El Reglamento de la LOT, en su artículo 71, establece que dichos días adicionales deberán ser pagados anualmente (depositado en cuenta del trabajador, por tanto disponibles por el trabajador), salvo que el trabajador manifestara su voluntad de capitalizarlos (agregar el monto de los días adicionales de antigüedad al capital acumulado de prestaciones sociales, a fin de que genere intereses). En tal sentido en la LOTTT, se utiliza el término "DEPOSITARÁ" como sinónimo de "ACREDITAR" (abono en cuenta), es decir, no cabe en principio la posibilidad de que el empleador pague, entregue, deposite en la cuenta nómina del trabajador, en consecuencia el trabajador no podría disponer de dichas cantidades, sino una vez culmine la relación de trabajo.</p>
+            <p className="mt-2">Por otro lado, en aplicación del principio de la continuidad de los beneficios laborales, si un trabajador venía recibiendo el pago anual de sus días adicionales, puede mediante manifestación escrita solicitar que se le mantenga su beneficio del pago anual de los mismos. Manifestación esta que debemos solicitar por escrito para que conste en los expedientes de los trabajadores.</p>
+          </>
+        ),
+      },
+      {
+        heading: "RENUNCIA O DESPIDO Y PAGO DEL DOBLE DE LAS PRESTACIONES",
+        body: (
+          <>
+            <p className="font-bold">¿Es realmente procedente o legal el pago del doble de las prestaciones sociales o "doblete"?</p>
+            <p className="mt-2">Escuchamos con frecuencia a trabajadores decir: "si renuncio me pagan el doblete" o a empleadores: "si firmas la renuncia te pago el doble de las prestaciones sociales".</p>
+            <p className="mt-2">El pago de una indemnización en caso de los trabajadores que gozan de estabilidad laboral procede cuando el trabajador acepta el despido aun siendo injustificado, recibiendo el pago de una cantidad de dinero a título de indemnización. Es la indemnización prevista en el artículo 92 de la LOTTT:</p>
+            <p className="mt-2 italic">"En caso de terminación de la relación de trabajo por causas ajenas a la voluntad del trabajador o trabajadora, o en los casos de despido sin razones que lo justifiquen cuando el trabajador o la trabajadora manifestaran su voluntad de no interponer el procedimiento para solicitar el reenganche, el patrono o patrona deberá pagarle una indemnización equivalente al monto que le corresponde por las prestaciones sociales."</p>
+            <p className="mt-2">Es decir, se sustituye el derecho al reenganche por el pago de una cantidad de dinero. El artículo habla de "una indemnización equivalente al monto que le corresponde por las prestaciones sociales", no dice que deba ser el doble: por ejemplo, si las prestaciones son Bs. 500.000, conforme al artículo 92 LOTTT el trabajador recibirá Bs. 1.000.000 en total (prestaciones + indemnización igual), no Bs. 1.500.000.</p>
+            <p className="mt-2">Si prácticamente todos los trabajadores gozan de inamovilidad, ¿podemos aplicar el artículo 92 LOTTT para finalizar las relaciones de trabajo? La respuesta es NO: la garantía es la permanencia en el trabajo, la inamovilidad no puede ser sustituida con una indemnización.</p>
+          </>
+        ),
+      },
+      {
+        heading: "PRESTACIONES EN PERÍODO DE PRUEBA",
+        body: (
+          <>
+            <p className="font-bold">¿El personal con contrato de período de prueba tiene derecho a prestaciones sociales?</p>
+            <p className="mt-2">El personal en período de prueba (no mayor a 30 días) no genera prestaciones sociales, ya que las mismas se generan a partir del primer mes completo trabajado.</p>
+          </>
+        ),
+      },
+      {
+        heading: "INTERESES DE MORA EN UNA LIQUIDACIÓN",
+        body: (
+          <>
+            <p className="font-bold">¿Cuál es la mejor manera de calcular los intereses de mora de una liquidación que ya tiene 1 mes después de la terminación del trabajo?</p>
+            <p className="mt-2">Los intereses de mora se generan a partir del 5to día después de terminada la relación de trabajo y la fórmula de cálculo es la siguiente:</p>
+            <p className="mt-2"><strong>Interés de mora</strong> = capital (monto adeudado de prestaciones sociales, el mayor entre el cálculo trimestral y el retroactivo) × tasa de interés activa determinada por el BCV × días de mora / 36.000 (ya que las tasas están anuales y en porcentaje).</p>
+          </>
+        ),
+      },
+      {
+        heading: "PRESTACIONES SOCIALES DURANTE REPOSO",
+        body: (
+          <>
+            <p className="font-bold">Estuve de reposo por 4 meses por embarazo de alto riesgo. ¿Durante ese período generé prestaciones sociales?</p>
+            <p className="mt-2">Aun cuando se trata de un reposo consecuencia del embarazo, no es como tal un reposo pre natal. El Art. 342 LOTTT establece que los reposos pre (6 semanas) y post natal (20 semanas) deberán computarse en la antigüedad de la trabajadora.</p>
+            <p className="mt-2">Durante esos 4 meses existió una suspensión de la relación de trabajo, durante los cuales de acuerdo con el Art. 73 LOTTT se computará para la antigüedad del trabajador. Ahora, ello no quiere decir que se generen prestaciones sociales, ya que no se está prestando el servicio y no se está percibiendo salario.</p>
+          </>
+        ),
+      },
+      {
+        heading: "GARANTÍA DE PRESTACIONES SOCIALES: FRACCIONES DE TRIMESTRE",
+        body: (
+          <>
+            <p className="font-bold">¿Es correcto pagar solo trimestres completos (15, 30, 45…) cuando el trabajador laboró una fracción del último trimestre?</p>
+            <p className="mt-2">Este es uno de los aspectos en que encontramos un vacío en la LOTTT. El Art. 142 LOTTT, literal A, establece que "el derecho al depósito se adquiere al iniciar el trimestre"; se entiende que al iniciar el trimestre, se trabaje completo o no. Este criterio es literalmente legal.</p>
+            <p className="mt-2">El literal E establece: "si la relación de trabajo finaliza antes de los tres (3) PRIMEROS meses" se pagarán 5 días de salario por mes trabajado o fracción. Algunos jueces aplican este criterio al finalizar la relación de trabajo: por ejemplo, 4 meses = 1 trimestre (15 días) + 5 días por la fracción del segundo trimestre, lo cual parece más justo. Según el literal A, al trabajador de 4 meses le correspondería 15 + 15 = 30 días, igual que a quien trabajó 6 meses completos.</p>
+            <p className="mt-2">Nuestra opinión es que se pague 5 días por mes o fracción del trimestre, garantizando el principio de igualdad.</p>
+          </>
+        ),
+      },
+      {
+        heading: "LIQUIDACIÓN POR MUERTE DEL TRABAJADOR",
+        body: (
+          <>
+            <p className="font-bold">¿Cómo se realiza el cálculo de los beneficios laborales de un trabajador cuando muere?</p>
+            <p className="mt-2">En caso de muerte natural del trabajador, se trata de una causa de terminación de la relación de trabajo por causa ajena a la voluntad de las partes y se debe proceder así:</p>
+            <ul className="list-disc pl-6 mt-2 space-y-1">
+              <li>Calcular sus prestaciones sociales, intereses sobre prestaciones sociales y demás beneficios adeudados: vacaciones, utilidades, salarios pendientes, beneficio de alimentación, etc.</li>
+              <li>Elaborar la liquidación indicando que la causa es la muerte natural, anexando partida o acta de defunción.</li>
+            </ul>
+            <p className="mt-3">El monto adeudado debe ser pagado a las personas que tienen derecho de conformidad con el Art. 145 LOTTT:</p>
+            <ul className="list-disc pl-6 mt-2 space-y-1">
+              <li>Hijos e hijas</li>
+              <li>Viudo o viuda</li>
+              <li>Padre y madre</li>
+              <li>Nietos o nietas cuando sean huérfanos</li>
+            </ul>
+            <p className="mt-2">Estas personas no tienen derecho preferente. Si varias solicitan el pago simultánea o sucesivamente, la indemnización se distribuirá entre todas por partes iguales.</p>
+            <p className="mt-3 font-semibold">Responsabilidad del empleador:</p>
+            <p className="mt-2">El empleador quedará exento de toda responsabilidad mediante el pago de las prestaciones sociales a los parientes que la hubieren reclamado dentro de los tres (3) meses siguientes al fallecimiento del trabajador.</p>
+            <p className="mt-3 font-semibold">Recomendaciones:</p>
+            <ul className="list-disc pl-6 mt-2 space-y-1">
+              <li>Mantener actualizados los expedientes de los trabajadores, con información de su grupo familiar y contactos.</li>
+              <li>Realizar el cálculo de la liquidación dentro de los 5 días siguientes al fallecimiento.</li>
+              <li>Solicitar a los familiares directos el acta o partida de defunción.</li>
+              <li>Elaborar acta de entrega del pago a los familiares directos (preferiblemente viuda o hijos), con copia de cédula, partidas de nacimiento y acta de matrimonio o concubinato. Dos ejemplares firmados con huellas dactilares.</li>
+              <li>Pagar preferiblemente mediante cheque de gerencia, sacar copia y pedir que sea firmado como recibido con firma y huellas del receptor.</li>
+              <li>Archivar todos los soportes por lo menos 10 años a partir del fallecimiento.</li>
+            </ul>
+          </>
+        ),
+      },
+      {
+        heading: "ME LIQUIDAN ANUALMENTE, ¿ESO ES LEGAL?",
+        body: (
+          <>
+            <p className="font-bold">En la empresa donde laboro liquidan anualmente (en diciembre). ¿Es legal, o la ley permite la liquidación solo al terminar la relación laboral?</p>
+            <p className="mt-2">El pago de las prestaciones sociales ("liquidación") es un derecho de los trabajadores para recompensar el tiempo de servicio y contar con una especie de ahorro al TERMINAR LA RELACIÓN DE TRABAJO. Por tal razón la LOTTT (Art. 141 y siguientes) establece que el pago se realiza al finalizar la relación de trabajo.</p>
+            <p className="mt-2">De forma excepcional, la LOTTT permite que el trabajador solicite un adelanto de hasta el 75% de lo depositado como garantía de prestaciones sociales (Art. 144 LOTTT). El Reglamento establece que solo se puede solicitar un (1) anticipo al año. Estos adelantos deben depender únicamente de la voluntad del trabajador y solo son procedentes en los casos del Art. 144 LOTTT (vivienda, mejoras, salud, estudios).</p>
+            <p className="mt-2">Cuando a un trabajador lo "liquidan" anualmente, al terminar la relación de trabajo este puede solicitar el pago de sus prestaciones de forma completa. Distinto es el caso del trabajador que solicita anticipos de forma escrita y con los soportes requeridos: al terminar la relación se le descontará del total acumulado los montos pagados anticipadamente.</p>
+          </>
+        ),
+      },
+      {
+        heading: "TOPE DE DÍAS ADICIONALES DE PRESTACIONES SOCIALES",
+        body: (
+          <>
+            <p className="font-bold">Los días adicionales van a partir del segundo año hasta un máximo de 30 días. Después del año 16, ¿se siguen depositando 30 días anualmente o solo cuando cumple 16 años?</p>
+            <p className="mt-2">En el año 17 y siguientes se le siguen depositando (o acreditando según la voluntad del trabajador) 30 días adicionales de prestación de antigüedad. El tope es para la acumulación de días: al alcanzar el tope, se continúa recibiendo la misma cantidad de días los años siguientes. Pasa igual con los días de disfrute de vacaciones y bono vacacional.</p>
+          </>
+        ),
+      },
+      {
+        heading: "PAGO DE PRESTACIONES SOCIALES LOTTT",
+        body: (
+          <>
+            <p className="font-bold">Un empleado con 1 año y 7 meses de servicio y salario mínimo se retira. ¿Se aplica el 142 c (60 días) o el 142 a (6 trimestres = 90 días)?</p>
+            <p className="mt-2">Se debe hacer el depósito trimestral de 15 días con el último salario integral durante toda la relación de trabajo, depositado en fideicomiso o acreditado en la contabilidad de la empresa (según voluntad del trabajador). Esto forma la garantía de prestaciones sociales (Art. 142 a LOTTT).</p>
+            <p className="mt-2">Al terminar la relación de trabajo, se hace también el cálculo a razón de 30 días por año de servicio o fracción superior a 6 meses, calculados con el último salario integral (Art. 142 c LOTTT). En este caso, por 7 meses (fracción superior a 6), se considera el año completo, es decir 30 días adicionales.</p>
+            <p className="mt-2">Se deben realizar los dos cálculos y se le pagará al trabajador el monto que resulte MAYOR.</p>
+          </>
+        ),
+      },
+      {
+        heading: "¿CUÁNDO SE PUEDE SOLICITAR REENGANCHE? ¿CÓMO RECLAMAR PRESTACIONES?",
+        body: (
+          <>
+            <p className="font-bold">Renuncié a mi trabajo por otro mejor y no he recibido liquidación. ¿Puedo solicitar reenganche?</p>
+            <p className="mt-2">No puedes solicitar reenganche. El reenganche procede en caso de despidos injustificados o retiros justificados, luego de seguir el procedimiento correspondiente.</p>
+            <ul className="list-disc pl-6 mt-2 space-y-2">
+              <li><strong>Trabajadores con inamovilidad:</strong> deberán solicitar dentro de los 30 días continuos siguientes a la desmejora o despido la calificación ante el Inspector del Trabajo, quien de calificarlo como injustificado ordenará el reenganche y pago de salarios caídos.</li>
+              <li><strong>Trabajadores con estabilidad:</strong> deberán acudir ante el Juez del Trabajo dentro de los 10 días continuos siguientes al despido, para seguir el procedimiento de estabilidad laboral.</li>
+              <li>Si un trabajador renuncia voluntariamente NO PUEDE SOLICITAR REENGANCHE.</li>
+            </ul>
+            <p className="mt-3 font-semibold">Reclamo de prestaciones sociales:</p>
+            <ol className="list-decimal pl-6 mt-2 space-y-1">
+              <li>Se puede realizar dentro de los 10 años siguientes a la terminación de la prestación de servicios (Art. 51 LOTTT).</li>
+              <li>Es importante no dejar pasar mucho tiempo; solo las prestaciones prescriben a los 10 años, otros derechos podrían perderse.</li>
+              <li>Vías: demanda judicial ante los Tribunales Laborales, reclamo ante la Inspectoría del Trabajo o transacción laboral homologada.</li>
+            </ol>
+          </>
+        ),
+      },
+      {
+        heading: "SALARIO NORMAL – BONO DE TRANSPORTE – VACACIONES Y UTILIDADES",
+        body: (
+          <>
+            <p className="font-bold">Mis empleados perciben un bono de transporte mensual. ¿Debe sumarse a su sueldo al calcular vacaciones y utilidades?</p>
+            <p className="mt-2">Sí, si dicho pago "es una remuneración que ellos reciben de forma normal, periódica, segura y permanente" forma parte del salario normal (último párrafo del Art. 104 LOTTT).</p>
+            <p className="mt-2">Para el cálculo de las vacaciones se toma como base el salario normal. Para el pago de las utilidades se toman todas las remuneraciones recibidas durante el año. Debe incluir el bono de transporte también para el cálculo de prestaciones sociales.</p>
+          </>
+        ),
+      },
+      {
+        heading: "CÁLCULO DE PRESTACIONES SOCIALES",
+        body: (
+          <>
+            <p className="font-bold">Tuve 2 años, 2 meses y 6 días en la empresa y la liquidación me salió en 3 mil bolívares. ¿Cuánto me tenía que salir?</p>
+            <p className="mt-2">Por esta vía no podemos realizar cálculos. Al terminar la relación de trabajo se debe hacer el cálculo retroactivo de las prestaciones sociales, además de vacaciones vencidas y no disfrutadas y/o fraccionadas, utilidades fraccionadas y otros conceptos que puedan corresponder.</p>
+            <p className="mt-2">Puede que luego del cálculo resulte una diferencia a tu favor, la cual puede ser reclamada aun cuando hayas recibido conforme el pago inicial. Para realizarlo se requieren soportes: recibos de pago, contratos, depósitos en cuenta, etc.</p>
+          </>
+        ),
+      },
+      {
+        heading: "DESPIDO JUSTIFICADO E INDEMNIZACIÓN",
+        body: (
+          <>
+            <p className="font-bold">¿Si un trabajador es despedido por causa justificada, no se le debe pagar el doble de las prestaciones?</p>
+            <p className="mt-2">Si el trabajador ha incurrido en causal de despido justificado (Art. 79 LOTTT), la organización debe seguir el procedimiento correspondiente según esté amparado por estabilidad (Art. 87 LOTTT) o inamovilidad (Art. 94 LOTTT). De no hacerlo, se considerará que la empresa reconoce que el despido fue sin justa causa.</p>
+            <p className="mt-2">Si se sigue el procedimiento y el despido se califica como justificado, no será procedente el pago de indemnización alguna.</p>
+          </>
+        ),
+      },
+      {
+        heading: "¿CÓMO HACER PARA QUE PAGUEN UNA LIQUIDACIÓN?",
+        body: (
+          <>
+            <p className="font-bold">Renuncié en enero de 2013 con 8 años de servicio y aún no me han dado la liquidación. ¿Qué debo hacer? ¿Puedo solicitar reenganche?</p>
+            <p className="mt-2"><strong>Reenganche:</strong> cuando hay renuncia voluntaria injustificada no hay lugar a reenganche. Si es renuncia justificada (Art. 80 LOTTT), tiene derecho a prestaciones sociales más una indemnización equivalente. En despido indirecto puede iniciarse la calificación de despido dentro de los 30 días continuos.</p>
+            <p className="mt-2"><strong>Reclamo del pago de prestaciones:</strong> dentro de los 10 años siguientes (Art. 51 LOTTT). Vías: demanda judicial, reclamo ante la Inspectoría del Trabajo o transacción homologada.</p>
+          </>
+        ),
+      },
+      {
+        heading: "LÍMITE EN EL PAGO DE PRESTACIONES SOCIALES",
+        body: (
+          <>
+            <p className="font-bold">¿Hay un número de días tope para pagar el Art. 142 LOTTT (antigüedad) en una liquidación?</p>
+            <p className="mt-2">El límite existe solo para los 2 días adicionales de antigüedad por año de servicio, acumulativos hasta 30 días (literal b). En cuanto al pago del literal c, será de 30 días por cada año de servicio o fracción superior a 6 meses, calculado con el último salario, sin tope máximo.</p>
+          </>
+        ),
+      },
+      {
+        heading: "PRESTACIONES SOCIALES POR SUPLENCIA",
+        body: (
+          <>
+            <p className="font-bold">He realizado una suplencia pre y post natal durante un año exacto. ¿Me corresponde liquidación al finalizar?</p>
+            <p className="mt-2">Sí. Al finalizar tu contrato por tiempo determinado deberás recibir el pago de los beneficios que te corresponden por un año de servicios: prestaciones sociales, vacaciones y bono vacacional, utilidades.</p>
+          </>
+        ),
+      },
+      {
+        heading: "SALARIO PARA EL PAGO DE ANTICIPO DE PRESTACIONES SOCIALES",
+        body: (
+          <>
+            <p className="font-bold">¿Qué monto se toma para el cálculo del anticipo de prestaciones: último sueldo o sueldo integral?</p>
+            <p className="mt-2">Se calcula con el salario integral. Debes conocer de antemano cuánto tiene acumulado el trabajador en su garantía de prestaciones sociales, la cual se realiza trimestralmente y se deposita con el último salario integral diario. Esto para poder calcular el porcentaje de adelanto solicitado, que puede ser hasta un 75% del monto acumulado.</p>
+          </>
+        ),
+      },
+      {
+        heading: "PAGO DE PRESTACIONES – ARREGLOS SEMESTRALES",
+        body: (
+          <>
+            <p className="font-bold">Tengo 14 años en una empresa de comida y la dueña dice que nos "arregla" cada 6 meses y que al retirarnos no nos corresponde nada. ¿Es así?</p>
+            <p className="mt-2">Cuando te retires puedes reclamar el pago de la totalidad de tus prestaciones, ya que esos arreglos son ilegales. La nueva jornada se aplica a todos los trabajadores independientemente de su número: la LOTTT ni el Reglamento hacen excepciones por número de trabajadores.</p>
+          </>
+        ),
+      },
+      {
+        heading: "LIQUIDACIÓN DE TRABAJADOR CON 1 MES DE SERVICIOS",
+        body: (
+          <>
+            <p className="font-bold">¿Qué beneficios percibe un trabajador con un mes y 12 días de labores?</p>
+            <p className="mt-2">De conformidad con el Art. 142 LOTTT, literal e, si la relación termina antes de los 3 meses, el pago será de 5 días de salario por mes trabajado o fracción: 5 días por el primer mes y 5 días por la fracción de 12 días del segundo mes. Además: vacaciones y bono vacacional fraccionado por meses completos trabajados (en este caso 1 mes), utilidades fraccionadas y beneficio de alimentación por los días trabajados.</p>
+          </>
+        ),
+      },
+      {
+        heading: "MOMENTO DEL PAGO DE LAS PRESTACIONES SOCIALES",
+        body: (
+          <>
+            <p className="font-bold">¿Cuánto tiempo debo esperar para el pago de mi liquidación?</p>
+            <p className="mt-2 italic">Art. 141 LOTTT: "…Las prestaciones sociales son créditos laborales de exigibilidad inmediata. Toda mora en su pago genera intereses, los cuales constituyen deudas de valor y gozan de los mismos privilegios y garantías de la deuda principal."</p>
+            <p className="mt-2">El día en que termina la relación de trabajo la empresa debe pagar al trabajador su liquidación. La LOTTT estableció en el Art. 142 literal F que el pago debe hacerse dentro de los 5 días siguientes a la terminación de la relación de trabajo. Toda mora genera intereses. Es recomendable que un profesional con experiencia haga el cálculo.</p>
+          </>
+        ),
+      },
+      {
+        heading: "PAGO DE LIQUIDACIÓN CON 3 MESES DE SERVICIO",
+        body: (
+          <>
+            <p className="font-bold">Trabajé 3 meses y 10 días y me retiré por razones personales. ¿Cuánto tardarán en pagar mi liquidación y me salen vacaciones y utilidades?</p>
+            <p className="mt-2">El pago debe ser dentro de los 5 días siguientes a la terminación de la relación de trabajo; toda demora genera intereses de mora. Te corresponde el pago de vacaciones, bono vacacional y utilidades fraccionadas por los 3 meses completos trabajados.</p>
+          </>
+        ),
+      },
+    ],
+    extraCta: { label: "Ver Guía de Cálculo de Prestaciones ($15)", to: "/recursos/guias#calculo-prestaciones" },
+  },
+  utilidades: {
+    intro:
+      "Preguntas frecuentes sobre utilidades: incidencia de reposos y aumentos salariales, salario base, fraccionamiento, número mínimo de empleados, adelantos y más, con base en la LOTTT.",
+    sections: [
+      {
+        heading: "INCIDENCIA DE LOS REPOSOS SOBRE LAS UTILIDADES",
+        body: (
+          <>
+            <p className="font-bold">¿Cuál es la incidencia de los reposos en el cálculo de utilidades?</p>
+            <p className="mt-2">Las utilidades remuneran la participación de los trabajadores en el enriquecimiento de la entidad de trabajo; por ello el pago se realiza por meses completos trabajados, en función del aporte con el trabajo realizado.</p>
+            <p className="mt-2">El pago de las utilidades debe ser proporcional a los meses trabajados, siendo las excepciones: reposos por accidente o enfermedad ocupacional y los casos de reposos pre y post natales. En el primer caso, por la responsabilidad objetiva del empleador; en el segundo, como medida de solidaridad y apoyo a la familia.</p>
+            <p className="mt-2">El tiempo de reposo por accidente o enfermedad común mayor a 3 días trae como consecuencia la suspensión de la relación de trabajo (Art. 73 LOTTT): el trabajador no presta servicios y el empleador no paga salario. Es por esto que dicho lapso se excluye para el pago de utilidades: durante ese tiempo el trabajador no contribuye con el enriquecimiento de la entidad de trabajo.</p>
+          </>
+        ),
+      },
+      {
+        heading: "INCIDENCIA DEL AUMENTO SALARIAL SOBRE LAS UTILIDADES",
+        body: (
+          <>
+            <p className="font-bold">El aumento salarial del 1ero de noviembre, ¿tiene incidencia en el cálculo de utilidades?</p>
+            <p className="mt-2">Sí, tiene incidencia, ya que el pago de las utilidades debe realizarse con el salario promedio anual. El aumento entra en vigencia a partir del 1 de noviembre, así que los meses de noviembre y diciembre tienen incidencia para el cálculo. Recordemos que el pago que se hace en el mes de diciembre corresponde a un anticipo, debiendo realizarse el cálculo definitivo dentro de los dos meses siguientes al cierre del ejercicio económico de la empresa.</p>
+          </>
+        ),
+      },
+      {
+        heading: "SALARIO NORMAL – BONO DE TRANSPORTE – VACACIONES Y UTILIDADES",
+        body: (
+          <>
+            <p className="font-bold">Mis empleados perciben un bono de transporte mensual. ¿Debe sumarse a su sueldo al calcular vacaciones y utilidades?</p>
+            <p className="mt-2">Sí, si dicho pago "es una remuneración que ellos reciben de forma normal, periódica, segura y permanente" forma parte del salario normal (último párrafo del Art. 104 LOTTT).</p>
+            <p className="mt-2">Para el cálculo de las vacaciones se toma como base el salario normal. Para las utilidades se toman todas las remuneraciones recibidas durante el año. Debe incluirse el bono de transporte también para las prestaciones sociales.</p>
+          </>
+        ),
+      },
+      {
+        heading: "¿EL TIEMPO DE DISFRUTE DE VACACIONES SE CUENTA COMO TIEMPO DE SERVICIO?",
+        body: (
+          <>
+            <p className="font-bold">Si un empleado se va de vacaciones el 20 de diciembre, ¿la fecha de cierre para conteo de días laborados es el 20 o el 31?</p>
+            <p className="mt-2">Los días de disfrute de vacaciones no se consideran una interrupción de la relación de trabajo a efecto de cálculo de los demás beneficios laborales (parte final del Art. 190 LOTTT).</p>
+          </>
+        ),
+      },
+      {
+        heading: "PAGO DE UTILIDADES A TRABAJADOR QUE NO LABORÓ TODO EL AÑO",
+        body: (
+          <>
+            <p className="font-bold">Si un empleado tiene 240 días laborando, de los cuales faltó 23 por permisos no remunerados, ¿cuántos días tomo para el pago de utilidades?</p>
+            <p className="mt-2">En el Art. 131 LOTTT se establece que cuando el trabajador no hubiese laborado todo el año, la bonificación se reducirá a la parte proporcional a los meses completos trabajados. En este caso: 7 meses completos laborados.</p>
+          </>
+        ),
+      },
+      {
+        heading: "CÁLCULO DE UTILIDADES FRACCIONADAS",
+        body: (
+          <>
+            <p className="font-bold">¿Cómo puedo calcular mis utilidades fraccionadas si tendré 9 meses laborando en noviembre y la empresa otorga 3 meses de utilidades?</p>
+            <p className="mt-2">Cuando el trabajador no hubiese laborado todo el año, la bonificación se reducirá a la parte proporcional correspondiente a los meses completos de servicios prestados (Art. 131 LOTTT).</p>
+            <p className="mt-2"><strong>Fórmula:</strong> Utilidades Fraccionadas = (utilidad que correspondería de haber trabajado el año completo) × (meses completos trabajados) × salario / 12.</p>
+          </>
+        ),
+      },
+      {
+        heading: "PAGO DE UTILIDADES DURANTE REPOSO PRE Y POST NATAL",
+        body: (
+          <>
+            <p className="font-bold">Estuve de reposo postnatal de febrero a marzo. ¿Me corresponden las utilidades completas o se descuenta ese periodo?</p>
+            <p className="mt-2">El Art. 131 LOTTT establece que cuando el trabajador no hubiese trabajado todo el año, sus utilidades se reducen a la parte proporcional. Sin embargo, cuando hablamos de la suspensión de la relación por maternidad (reposos pre y post natal), debe hacerse una interpretación restrictiva del Art. 131 LOTTT, de manera de garantizar la protección integral de la maternidad (Art. 76 de la Constitución y convenios internacionales), debiendo generarse el pago de utilidades a las trabajadoras durante el tiempo que dure su reposo pre y post natal.</p>
+            <p className="mt-2">¿Por qué? Si lo que se quiere es garantizar la "protección integral de la maternidad", debe asegurarse la tranquilidad económica para que la madre no se vea obligada a elegir entre el descanso y volver al trabajo para recibir sus beneficios.</p>
+            <p className="mt-2">Si se trata de un reposo médico común, el pago de las utilidades se realizará de forma proporcional o fraccionada por los meses completos trabajados.</p>
+          </>
+        ),
+      },
+      {
+        heading: "NÚMERO DE EMPLEADOS PARA OTORGAR UTILIDADES",
+        body: (
+          <>
+            <p className="font-bold">En la empresa donde trabajo solo hay 5 empleados contando al dueño. ¿Nos corresponde el beneficio de las utilidades?</p>
+            <p className="mt-2">Sí les corresponde. La ley no establece condiciones por número de empleados para otorgar utilidades o bonificación de fin de año, según corresponda.</p>
+          </>
+        ),
+      },
+      {
+        heading: "¿CÓMO INFLUYE UN PERMISO NO REMUNERADO EN EL CÁLCULO?",
+        body: (
+          <>
+            <p className="font-bold">Convine con un trabajador darle 1 mes de permiso no remunerado. ¿Eso influye en vacaciones y utilidades?</p>
+            <p className="mt-2"><strong>Utilidades:</strong> el Art. 131 LOTTT establece que si el trabajador no ha laborado todo el año, la bonificación se reduce a la parte proporcional a los meses completos de servicio. Por el mes de permiso no le corresponde utilidad. Recordemos que las utilidades son una compensación por la contribución del trabajador con la prestación de sus servicios en la generación de utilidades: si no presta el servicio, no aporta en el enriquecimiento de la entidad.</p>
+            <p className="mt-2"><strong>Vacaciones:</strong> con la LOTTT, las faltas justificadas al trabajo (enfermedad, accidente o ausencia autorizada por el patrono) no se consideran interrupción de la continuidad en la prestación del servicio, así que el trabajador podrá solicitar sus vacaciones en la oportunidad que cumpla su año laboral (Art. 202 LOTTT).</p>
+          </>
+        ),
+      },
+      {
+        heading: "ADELANTO DE UTILIDADES",
+        body: (
+          <>
+            <p className="font-bold">¿Cuánto me corresponderá de bono de fin de año con fecha de ingreso el 10/08/2014?</p>
+            <p className="mt-2">El momento de pago de las utilidades es dentro de los dos meses siguientes al cierre del ejercicio económico de la empresa. La ley prevé que los trabajadores reciban, en calidad de anticipo, 30 días de salario dentro de los primeros 15 días del mes de diciembre.</p>
+            <p className="mt-2">Un adelanto de utilidades puede ser convenido entre trabajador y empleador cuando las utilidades son convencionales (por ejemplo: 90 o 120 días conocidos de antemano). El otorgamiento es VOLUNTARIO por parte del empleador y se calcula así:</p>
+            <p className="mt-2"><strong>Utilidades fraccionadas</strong> = (N° de días de utilidades que correspondan / 360 días) × N° meses completos trabajados × (salario para utilidades).</p>
+            <p className="mt-2"><strong>Salario para utilidades</strong> = salario normal + alícuota de bono vacacional.</p>
+          </>
+        ),
+      },
+    ],
+    extraCta: { label: "Ver Guía de Cálculo de Utilidades ($15)", to: "/recursos/guias#calculo-utilidades" },
+  },
 };
 
 export const Route = createFileRoute("/recursos/temas/$slug")({
