@@ -946,6 +946,266 @@ const articles: Record<string, ArticleContent> = {
     ],
     extraCta: { label: "Ver Guía de Cálculo de Utilidades ($15)", to: "/recursos/guias#calculo-utilidades" },
   },
+  "dias-feriados": {
+    intro:
+      "ART. 184 LOTTT: «Todos los días del año son hábiles para el trabajo con excepción de los feriados». Aquí te explicamos cuáles son los días feriados, cómo se remuneran y cómo se calcula el recargo cuando se trabaja en uno de ellos.",
+    sections: [
+      {
+        heading: "¿CUÁLES SON LOS DÍAS FERIADOS?",
+        body: (
+          <>
+            <ul className="mt-2 list-disc pl-5 space-y-1">
+              <li>Los domingos</li>
+              <li>El 1º de enero</li>
+              <li>Lunes y martes de carnaval</li>
+              <li>El jueves y el viernes Santos</li>
+              <li>El 1º de mayo</li>
+              <li>El 24, 25 y 31 de diciembre</li>
+              <li>Los señalados en la Ley de Fiestas Nacionales: 19 de abril, 24 de junio, 5 de julio, 24 de julio, 12 de octubre, y</li>
+              <li>Los que se declaren festivos por el Gobierno Nacional, por los Estados o por las Municipalidades, hasta un límite total de tres (3) por año.</li>
+            </ul>
+          </>
+        ),
+      },
+      {
+        heading: "REMUNERACIÓN DE LOS DÍAS FERIADOS",
+        body: (
+          <>
+            <p className="mt-2">Art. 119 LOTTT. “El trabajador tiene derecho a que se le pague el salario correspondiente a los días feriados o de descanso cuando haya prestado servicios durante los días hábiles de la jornada semanal de trabajo”</p>
+            <p className="mt-2">Art. 120 LOTTT</p>
+          </>
+        ),
+      },
+      {
+        heading: "CUANDO EL SALARIO DEL TRABAJADOR ES FIJO MENSUAL",
+        body: (
+          <>
+            <p className="mt-2">El pago de los días feriados y de descanso obligatorio estará comprendido en dicha remuneración.</p>
+            <p className="mt-2"><strong>Ejemplo:</strong> Un trabajador que labora de lunes a viernes y gana salario mínimo mensual, en ese pago están incluidos los días de descanso y feriados del mes.</p>
+          </>
+        ),
+      },
+      {
+        heading: "CUANDO EL SALARIO DEL TRABAJADOR SEA VARIABLE",
+        body: (
+          <>
+            <p className="mt-2">Se deberá calcular para el pago de los días de descanso o feriados el salario normal promedio devengado durante los días laborados en la semana, quincena o mes respectiva.</p>
+            <p className="mt-2"><strong>Ejemplo:</strong> Un trabajador que labora de lunes a viernes, y recibe un salario variable de acuerdo a las comisiones por ventas realizadas diariamente, para saber cuánto se le debe pagar por los sábados, domingos y feriados se debe calcular el salario promedio de los días hábiles trabajados en la semana, quincena o mes.</p>
+          </>
+        ),
+      },
+      {
+        heading: "¿QUÉ PASA SI UN TRABAJADOR PRESTA SUS SERVICIOS EN UN DÍA FERIADO? ART. 120 LOTTT",
+        body: (
+          <p className="mt-2">Cuando el trabajador preste servicios en día feriado tendrá derecho al salario correspondiente a ese día y además al que corresponda por razón del trabajo realizado, calculado con un recargo del 50% sobre el salario normal.</p>
+        ),
+      },
+      {
+        heading: "¿CÓMO CALCULAMOS EL RECARGO POR DÍAS FERIADOS TRABAJADOS?",
+        body: (
+          <>
+            <p className="mt-2 font-bold">RDFT = SD x 1,5 x N°DFT</p>
+            <ul className="mt-2 list-disc pl-5 space-y-1">
+              <li>RDFT = Recargo por Día Feriado Trabajado</li>
+              <li>SD = Salario Diario</li>
+              <li>N° DFT = Número de días Feriados Trabajados</li>
+            </ul>
+            <p className="mt-2 text-sm text-muted-foreground">*Este recargo debe pagarse además del salario correspondiente a ese día.</p>
+            <p className="mt-4 font-bold">EJEMPLO:</p>
+            <p className="mt-2">Pedro, trabaja de lunes a viernes, recibe una pago mensual de 6.000.000 Bs. Pedro debe trabajar lunes y martes de carnaval. Pedro quiere saber cuánto le deben pagar por esos dos días feriados.</p>
+            <p className="mt-2"><strong>Primero:</strong> Calculamos su salario diario</p>
+            <p className="mt-1">Salario diario = Salario mensual /30</p>
+            <p>Salario diario = 6.000.000/30</p>
+            <p>Salario diario = 200.000</p>
+            <p className="mt-2"><strong>Segundo:</strong> Calculamos el recargo por los días feriados trabajados (2: lunes y martes de carnaval)</p>
+            <p className="mt-1">RDFT = SD x 1,5 x N°DFT</p>
+            <p>RDFT = 200.000 x 1,5 x 2</p>
+            <p>RDFT = 600.000 Bs.</p>
+            <p className="mt-2">En ese mes Pedro debe recibir como pago adicional, especificado en su recibo de pago la cantidad de Bs. 600.000.</p>
+            <p className="mt-2">Si se trata de un trabajador con salario variable, se aplica la misma forma de cálculo, sólo que se debe tomar como base de cálculo el salario normal promedio semanal, quincenal o mensual, según sea el caso.</p>
+          </>
+        ),
+      },
+      {
+        heading: "¿SI UN TRABAJADOR PRESTA SUS SERVICIOS EN UN DÍA FERIADO LE CORRESPONDE DESCANSO COMPENSATORIO?",
+        body: (
+          <p className="mt-2">Depende, si el día feriado coincide con el día de descanso del trabajador, el empleador deberá concederle el día de descanso compensatorio, de lo contrario no habrá derecho al descanso compensatorio, por el servicio prestado en un día feriado.</p>
+        ),
+      },
+    ],
+    extraCta: { label: "Ver Guía sobre la Jornada de Trabajo ($15)", to: "/recursos/guias#jornada-de-trabajo" },
+  },
+  "dias-descanso": {
+    intro:
+      "Preguntas frecuentes sobre días de descanso: descanso compensatorio, horas extras en día de descanso trabajado, descuentos por faltas, beneficio de alimentación y días continuos de descanso, con base en la LOTTT y su Reglamento.",
+    sections: [
+      {
+        heading: "DÍA COMPENSATORIO",
+        body: (
+          <>
+            <p className="font-bold">“Yo he trabajado dias libres en la empresa.. ¿me corresponde dias compensatorios aunque no sean trabajados en dias feriados?”</p>
+            <p className="mt-2">El descanso compensatorio corresponde sólo cuando se labora los días de descanso (días libres).</p>
+          </>
+        ),
+      },
+      {
+        heading: "PAGO DE HORAS EXTRAS EN DÍA DE DESCANSO TRABAJADO",
+        body: (
+          <>
+            <p className="font-bold">"BUENAS NOCHES... SI UN TRABAJADOR LABORA EN SUS DIAS DE DESCANSO QUE SERIA SABADO Y DOMINGO, CUMPLIENDO CON UNA JORNADA DIURNA, Y ESTOS DIAS LABORA MAS DE 8 HORAS, SE LE DEBE PAGAR HORAS EXTRAS?? MUCHAS GRACIAS DE ANTEMANO."</p>
+            <p className="mt-2">Si se le deben pagar las horas extras de acuerdo al art. 118 LOTTT:</p>
+            <p className="mt-2 italic">“Las horas extraordinarias serán pagadas con un cincuenta por ciento de recargo, por lo menos, sobre el salario convenido para la jornada ordinaria. Para el cálculo de lo que corresponda al trabajador o trabajadora por causa de horas extras, se tomará como base el salario normal devengado durante la jornada respectiva.”</p>
+            <p className="mt-2">Por lo tanto:</p>
+            <ul className="mt-2 list-disc pl-5 space-y-1">
+              <li>Se debe pagar la hora extra con un recargo del 50%</li>
+              <li>El salario base de cálculo será el salario normal de la jornada (salario diario más el recargo del 50% por ser día de descanso laborado)</li>
+            </ul>
+            <p className="mt-2">Así que se debe aplicar primero el recargo del día correspondiente, luego dividirlo entre 8, para obtener el salario hora, este se multiplica por 1.5, para obtener el valor de una hora extra y luego multiplicas por el número de horas extras trabajadas.</p>
+            <p className="mt-2">Si la hora extra es nocturna se debe multiplicar por 1.95, ya que se debe incluir el pago del recargo del 30% por ser hora nocturna.</p>
+            <p className="mt-2 font-bold">Hora extra = (salario hora × 1.5) × n° de horas extras trabajadas.</p>
+            <p className="mt-2">Si requieres un soporte para justificar el cálculo o defender tus derechos solicita uno de nuestros servicios de consulta. También realizamos cálculos.</p>
+          </>
+        ),
+      },
+      {
+        heading: "COMPENSACIÓN POR TRABAJAR UN DÍA DE DESCANSO SÁBADO",
+        body: (
+          <>
+            <p className="font-bold">"En nuestra empresa que cumple horario de 8:00 AM a 12:00 M y de 1:00 PM a 5:00 PM sábado y domingo libre. Si trabajamos un día sábado para realizar un trabajo especial donde participamos todos los trabajadores de oficina. Este día lo pagamos normal y se les dio un día libre más en el disfrute de sus vacaciones, y se le pago un día más de bono de alimentación. ¿Es esto lo correcto?"</p>
+            <p className="mt-2">Cuando un trabajador labora en su día de descanso obligatorio, en este caso un día sábado, el mismo debe ser remunerado de la siguiente forma:</p>
+            <p className="mt-2">De conformidad con el art. 120 de la LOTTT, el trabajador tendrá derecho al salario correspondiente a ese día y además al que le corresponda por razón del trabajo realizado, calculado con recargo del cincuenta por ciento sobre el salario normal.</p>
+            <p className="mt-2">Es decir, se le paga el día sábado por ser un día de descanso, que de acuerdo al art. 119 de la LOTTT y art. 13 RPLOTTT, debe ser remunerado. Si el trabajador recibe una remuneración mensual, este pago esta incluido. Recordemos que se pagan los 30 días del mes (calendario comercial año de 360 días), y se le debe pagar el salario correspondiente por el trabajo realizado con un 50 % de recargo.</p>
+            <p className="mt-2">De esta forma obtenemos el recargo que se les debe pagar a los trabajadores.</p>
+            <p className="mt-2">Se les debe otorgar un día adicional de beneficio de alimentación por haber prestado sus servicios de forma efectiva un día adicional.</p>
+            <p className="mt-2">Debido a que los trabajadores prestaron su servicio el día que les correspondía su día de descanso semanal obligatorio se les debe otorgar un día de descanso compensatorio en la semana inmediatamente siguiente, este día debe ser remunerado (como un día normal de trabajo, sin recargo alguno. Art. 188 LOTTT). Es como cambiar el día de descanso por otro día en la semana. Debe quedar claro que no se puede sustituir el descanso compensatorio con ningún otro beneficio de otra naturaleza: los trabajadores deben descansar.</p>
+            <p className="mt-2">Por este día no se otorga beneficio de alimentación, ya que le trabajador no presta sus servicios, como no se otorga el beneficio los días de descanso semanal, a menos que sea una práctica de la empresa como una forma de otorgar un mayor beneficio a sus trabajadores.</p>
+            <p className="mt-2">En cuanto a otorgar un día adicional de disfrute de vacaciones, esto no es obligatorio, se aplica sólo de forma excepcional para aquellas empresas que deben laborar jornadas de 6 días a la semana. (art. 13 RPLOTTT).</p>
+          </>
+        ),
+      },
+      {
+        heading: "DERECHOS ADQUIRIDOS TRABAJADORES",
+        body: (
+          <>
+            <p className="font-bold">"Ante todo agradecer este tipo de tribuna que brindan y que ayudan a un mejor entendimiento de una letra viva que rige destinos. Mi caso es que actualmente venimos descontando el bono nocturno y cesta ticket del día que descansa por compensatorio de sábado laborado. Pero hubo otra época donde lo pagamos. Este cambio de esquema pudo generar algún derecho adquirido?? Gracias por su atención"</p>
+            <p className="mt-2">Entendemos lo siguiente: Una persona trabajó un sábado (siendo este un día de descanso semanal), como consecuencia tiene en la semana un día de descanso compensatorio, pero no le pagan el bono nocturno ni cesta tickets (entiendo que la persona trabaja en horario nocturno). Pero antes si pagaban estos conceptos.</p>
+            <p className="mt-2">Fíjense:</p>
+            <p className="mt-2">Cuando un trabajador presta sus servicios un día que le corresponde su descanso semanal, tendrá derecho a un día de descanso compensatorio y de salario. (Art.188 LOTTT), tal cual como es remunerado un día de descanso.</p>
+            <p className="mt-2">El pago del bono nocturno y del beneficio de alimentación procede cuando el trabajador presta sus servicios efectivamente, por lo cual no serán pagados estos conceptos cuando el trabajador está descansando.</p>
+            <p className="mt-2">Si la empresa, venía pagando estos conceptos, bien sea por error o desconocimiento, y mantuvo esa práctica por lo menos un año (art. 8 Reglamento LOT), no podrá alegar su “error”, ya que por el transcurrir del tiempo los trabajadores han adquirido el derecho a percibir dichas remuneraciones.</p>
+            <p className="mt-2">Así que, ante un cambio o “corrección del error” por parte de la empresa (si ha pasado más de un año), los trabajadores pueden alegar una desmejora laboral.</p>
+            <p className="mt-2">Siempre recomendamos a las empresas, asesorarse bien y brindar apoyo legal a su departamento de recursos humanos o administración, quienes como seres humanos, pueden cometer errores por desconocimiento o malas prácticas, con lo cual pueden comprometer la responsabilidad y generar nueva obligaciones para la empresa.</p>
+          </>
+        ),
+      },
+      {
+        heading: "DESCUENTOS POR FALTAS – DESCUENTO DÍAS DE DESCANSO",
+        body: (
+          <>
+            <p className="font-bold">"Buenas tardes! les agradezco mucho la ayuda. La empresa donde laboro tiene jornada laboral de lunes a viernes. Si un empleado falta injustificadamente un día de la jornada laboral puedo descontar ese día y también sábado y domingo?? su pago es semanal y normalmente se le paga 7 días (lunes a domingo) trabajando de lunes a viernes y tomando sus días de descanso consecutivos (sábado y domingo) si falta por ejemplo el miércoles que debo pagarle?? mil gracias por la información"</p>
+            <p className="mt-2">No se le paga el día que faltó. El derecho al pago de los días de descanso sólo se pierde cuando se falte más de una vez (2 veces o más) durante la jornada semanal de trabajo. (Art. 119 LOTTT). Así que si falta un solo día a la semana, se le descuenta el día que faltó y se le debe respetar el pago de los días de descanso.</p>
+          </>
+        ),
+      },
+      {
+        heading: "PÉRDIDA DE PAGO DE DÍA DE DESCANSO",
+        body: (
+          <>
+            <p className="font-bold">"si un trabajador falta dos días de su jornada semanal de 5 días de trabajo sigue percibiendo los dos días de descanso a efectos de salario, porque según el Art. 119 de la LOTTT: "El trabajador o trabajadora no perderá ese derecho si durante la jornada semanal de trabajo en la entidad de trabajo faltare un día de su trabajo. gracias."</p>
+            <p className="mt-2">En caso de dos (2) ó más faltas pierde el derecho al pago de los días de descanso.</p>
+          </>
+        ),
+      },
+      {
+        heading: "PAGO DE DÍA DE DESCANSO POR JORNADA DIARIA DE 5 HORAS",
+        body: (
+          <>
+            <p className="font-bold">"desempeñe labores por dos meses en un establecimiento en el que trabajaba 5 horas diarias por cinco días a la semana, con un total de 25 horas semanales, pero mi empleador no me cancelaba los días de descanso alegando que yo no cumplo con las 40 horas semanales de trabajo además de lo establecido en el artículo 3 del reglamento de LOTTT cuando establece "salvo aquellos derechos que tengan como supuesto de procedencia la prestación del servicio a tiempo completo" es cierto esto?"</p>
+            <p className="mt-2">Te deben pagar los días de descanso, ya que este derecho se adquiere cuando el trabajador preste sus servicios durante los días hábiles de la jornada de trabajo (no establece un límite de horas), en este caso tu jornada diaria es de 5 horas, recordemos que las 8 horas diarias son un límite máximo. La ley establece que se pierde el derecho al pago del día de descanso, sólo cuando se falte más de un día en la semana de trabajo. Art. 119 LOTTT.</p>
+          </>
+        ),
+      },
+      {
+        heading: "DÍAS DE DESCANSO FERIADOS EN PERIODO VACACIONAL",
+        body: (
+          <>
+            <p className="font-bold">"Quería que me enviaran un modelo de pagos de vacaciones cuando el trabajador tenga tres años o más…y si se le sábado y domingos como día libres, ósea, cobraría 15 días de vacaciones y 06 días libres"</p>
+            <p className="mt-2">Sólo facilitamos formatos y modelos a Trabajadores que han realizado Consultas pagas, y a Empresas que han contratado alguno de nuestros Planes de Servicio. Un trabajador que tenga tres años o más de servicio debe recibir por concepto de vacaciones:</p>
+            <ul className="mt-2 list-disc pl-5 space-y-1">
+              <li>15 días de disfrute remunerados + 1 día adicional por cada año de servicios</li>
+              <li>15 días de bono vacacional + 1 día adicional por cada año de servicios</li>
+              <li>Días de descanso y feriados comprendidos en el periodo de vacaciones, también remunerados</li>
+              <li>Beneficio de alimentación por los días de disfrute de vacaciones</li>
+            </ul>
+          </>
+        ),
+      },
+      {
+        heading: "PAGO DE DÍAS DE DESCANSO",
+        body: (
+          <>
+            <p className="font-bold">"HOLA. MI PREGUNTA ES LA SIGUIENTE. AHORA CON LA NUEVA LOTTT, SE TRABAJARAN 5 DIAS A LA SEMANA, Y DOS SERAN LIBRES. ESTOS DOS DIAS DE DESCANSO SERAN CANCELADOS IGUAL?, ES DECIR EN LA QUINCENA SE CANCELARAN 15 DIAS, O SOLO LOS TRABAJADOS EXCLUYENDO LOS DE DESCANSO? Y LO MISMO PASA CON EL BONO ALIMENTACION? SE DEDUCEN DE ESTE PAGO LOS DIAS NO TRABAJADOS? GRACIAS"</p>
+            <p className="mt-2">Los días de descanso siempre deben ser remunerados, se pagan los 30 días del mes y el beneficio de alimentación se debe pagar por jornada laborada, es este caso si se disminuyen ya que hay un día adicional de descanso.</p>
+          </>
+        ),
+      },
+      {
+        heading: "DÍAS CONTINUOS DE DESCANSO",
+        body: (
+          <>
+            <p className="font-bold">"mi pregunta es porq la empresa necesito q me explique los dias continuos a la semana porq aqui en la empresa aplicaron a la semana dias de descando lunes y sabado porque yo tengo entendido q una semana es lunes a domingo necesito saber si la empresa esta haciendo lo correcto gracias"</p>
+            <p className="mt-2">El reglamento parcial de la LOTTT, establece que los días continuos de descanso son sábado y domingo o domingo y lunes.</p>
+          </>
+        ),
+      },
+      {
+        heading: "DÍAS DE DESCANSO",
+        body: (
+          <>
+            <p className="font-bold">"Buenas noches mi pregunta es la siguiente: Yo trabajo en un negocio de 12 del mediodía a 6 de la tarde 6 días a la semanas (lunes a sábado) es decir 6 horas diarias quedan 36 horas semanales, por lo q quisiera saber como es el tema de los días libres que me tocan, si me tocan 2 días libre o como es la ley al solo trabajar 36 horas por 6 días. Se supone que por no trabajar los domingo solo me toca 1 solo día??? Gracias"</p>
+            <p className="mt-2">Si ya tienes el domingo como día de descanso debes tener un día adicional: sábado o lunes. No importa que la jornada semanal sea inferior al límite semanal para tener los dos días de descanso continuo que incluya el domingo, es decir sábado y domingo, o domingo y lunes.</p>
+          </>
+        ),
+      },
+      {
+        heading: "REPOSO MÉDICO Y DÍAS DE DESCANSO",
+        body: (
+          <>
+            <p className="font-bold">"Buenas, los representante de la empresa dicen que si el trabajador se enferma por un dia o mas, tienen que laborar dias libres para compensar el dia de reposo. Mi pregunta es: Puede la empresa obligar a trabajar un dia libre por recuperar un dia de reposo medico? y en que articulo me puedo bazar: Gracias"</p>
+            <p className="mt-2">Las faltas por razones de enfermedad son una falta justificada, siempre y cuando el trabajador lo notifique y justifique con los reposos correspondientes o justificativos médicos. En ningún caso el empleador puede disponer de los días de descanso.</p>
+          </>
+        ),
+      },
+      {
+        heading: "PAGO DE DÍAS DE DESCANSO (JORNADA CON HORAS DE 45 MINUTOS)",
+        body: (
+          <>
+            <p className="font-bold">“necesitamos saber si un profesor que trabaja en un colegio privado y que labora 40 horas semanales (confirmado con sus recibos de pago) de lunes a viernes, no nos pagan los dias sabado y domingo que son nuestros dias de descanso, sin embargo el patrono nos informa que como nuestras 8 horas son de 45 minutos cada una, que es el tiempo de una hora de clase, no nos corresponde que nos cancele los dias de descanso. por lo que acudo a ustedes para obtener la verdad sobre este caso. gracias”</p>
+            <p className="mt-2">Los días de descanso siempre deben ser remunerados. Si el trabajador percibe una remuneración fija mensual en dicha remuneración esta incluida el pago de los días de descanso (se pagan los 30 días del mes). El hecho de que una jornada de trabajo sea inferior al límite máximo legal no da derecho al empleador a disponer del pago de los días de descanso.</p>
+          </>
+        ),
+      },
+      {
+        heading: "PAGO BENEFICIO ALIMENTACIÓN - DÍAS DE DESCANSO",
+        body: (
+          <>
+            <p className="font-bold">“Buenas tardes hasta ahora yo trabajo de lunes a sábado por lo tanto percibo 6 tickets por semana, una vez que empiece de lunes a viernes bajarían los tickets a 5? Es decir aumenta el descanso pero baja el ingreso?”</p>
+            <p className="mt-2">Efectivamente, serán 5 tickets a la semana, a menos que el empleador voluntariamente continúe pagando los 6 tickets, aunque está obligado a pagar sólo 5. Se supone que debe aumentar el descanso, la integración familiar y la calidad de vida.</p>
+          </>
+        ),
+      },
+      {
+        heading: "DÍAS DE DESCANSO POR TURNOS",
+        body: (
+          <>
+            <p className="font-bold">“Buenas tengo una duda, yo trabajo en un centro comercial con un horario de 2 a 9pm, libro los miercoles xq ese dia tengo clases desde la manana hasta la noche, mi duda es como seraa mis dias libres con el ajuste de la nueva ley? X ahora me dan miercoles y domingo, es cierto q si trabajo el domingo para librar martes y miercoles deben darme un dia adicional?”</p>
+            <p className="mt-2">De acuerdo al Reglamento parcial de la LOTTT, los días de descanso deben ser sábado y domingo, o domingo y lunes, si el horario es por turnos pueden ser días distintos al domingo y no obligatoriamente continuos, que creemos puede ser tu caso. En caso de que empieces a trabajar los domingos y libres martes y miércoles, uno de esos días será tu día compensatorio de descanso. La diferencia se verá en tus ingresos ya que el feriado trabajado (domingo) deben pagártelo como verás en la página sobre días feriados.</p>
+          </>
+        ),
+      },
+    ],
+    extraCta: { label: "Ver Guía sobre la Jornada de Trabajo ($15)", to: "/recursos/guias#jornada-de-trabajo" },
+  },
 };
 
 export const Route = createFileRoute("/recursos/temas/$slug")({
